@@ -54,7 +54,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Obstaculos\controlarAlJugador.cs" />
+    <Compile Include="Assets\POLY STYLE - Platformer Starter Pack\Platformer Starter Pack_URP\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\POLY STYLE - Platformer Starter Pack\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
