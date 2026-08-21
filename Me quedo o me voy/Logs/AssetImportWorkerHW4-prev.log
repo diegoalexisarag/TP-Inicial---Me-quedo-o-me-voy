@@ -281,3 +281,72 @@ Memory consumption went from 341.2 MB to 335.9 MB.
 Total: 17.299400 ms (FindLiveObjects: 1.071600 ms CreateObjectMapping: 3.263800 ms MarkObjects: 8.356300 ms  DeleteObjects: 4.604600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 2.78 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.028 seconds
+Domain Reload Profiling: 2171ms
+	BeginReloadAssembly (370ms)
+		DisableScriptedObjects (21ms)
+		CreateAndSetChildDomain (96ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (102ms)
+	LoadAllAssembliesAndSetupDomain (635ms)
+		LoadAssemblies (595ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (10ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1030ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (350ms)
+			ProcessInitializeOnLoadMethodAttributes (189ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (39ms)
+Refreshing native plugins compatible for Editor in 4.19 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (5.5 MB). Loaded Objects now: 7702.
+Memory consumption went from 342.7 MB to 337.2 MB.
+Total: 17.684200 ms (FindLiveObjects: 1.132200 ms CreateObjectMapping: 2.774200 ms MarkObjects: 9.092400 ms  DeleteObjects: 4.682000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Refreshing native plugins compatible for Editor in 3.36 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.6 MB). Loaded Objects now: 7702.
+Memory consumption went from 340.0 MB to 337.4 MB.
+Total: 9.365000 ms (FindLiveObjects: 0.571100 ms CreateObjectMapping: 0.801900 ms MarkObjects: 7.341900 ms  DeleteObjects: 0.648100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Refreshing native plugins compatible for Editor in 3.39 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.6 MB). Loaded Objects now: 7702.
+Memory consumption went from 342.0 MB to 339.4 MB.
+Total: 10.022900 ms (FindLiveObjects: 0.562000 ms CreateObjectMapping: 0.838500 ms MarkObjects: 7.717100 ms  DeleteObjects: 0.902700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Editor is closing down
+AcceleratorClientConnectionCallback - disconnected - :0
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
