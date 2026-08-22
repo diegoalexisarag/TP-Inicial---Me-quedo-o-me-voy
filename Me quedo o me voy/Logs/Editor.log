@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.5/staging' branch; Version is '6000.5.8f1 (5cb7df797b7d) revision 6076383'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego" at "2026-08-22T06:05:27.0389876Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego" at "2026-08-22T23:20:47.2062257Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 20373 MB
 BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-08-22T06:05:27Z
+Date: 2026-08-22T23:20:47Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.5.8f1\Editor\Unity.exe
@@ -19,9 +19,9 @@ production
 -licensingIpc
 LicenseClient-diego
 -hubSessionId
-7c2a3700-6ac1-45d7-a52f-243c3a59dacc
+89020adc-8128-4683-b977-03382b897527
 -accessToken
-9naV4eDNAnvEUirrgk-aVfZNPOhdqLRTiKLpyWXFJIA004f
+kxqXcukFCb6xHwj7MG_sVJ4UKA-I4HI0bwnp_ipyLq8004f
 Successfully changed project path to: C:\Users\diego\OneDrive\Documentos\GitHub\TP-Inicial---Me-quedo-o-me-voy\Me quedo o me voy
 C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me quedo o me voy
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -60,18 +60,18 @@ C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me qued
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [14964]  Target information:
+Player connection [25984]  Target information:
 
-Player connection [14964]  * "[IP] 169.254.13.135 [Port] 55504 [Flags] 2 [Guid] 3160655740 [EditorId] 3160655740 [Version] 1048832 [Id] WindowsEditor(7,DiegoPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [25984]  * "[IP] 169.254.13.135 [Port] 55504 [Flags] 2 [Guid] 1103515995 [EditorId] 1103515995 [Version] 1048832 [Id] WindowsEditor(7,DiegoPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [14964]  * "[IP] 192.168.1.7 [Port] 55504 [Flags] 2 [Guid] 3160655740 [EditorId] 3160655740 [Version] 1048832 [Id] WindowsEditor(7,DiegoPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [25984]  * "[IP] 192.168.1.7 [Port] 55504 [Flags] 2 [Guid] 1103515995 [EditorId] 1103515995 [Version] 1048832 [Id] WindowsEditor(7,DiegoPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [14964] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [14964] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25984] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25984] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-34136" after 0.7 seconds.
+[Package Manager] Connected to IPC stream "Upm-14000" after 0.6 seconds.
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
@@ -79,23 +79,23 @@ Input System module state changed to: Initialized.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-diego"
 [Licensing::IpcConnector] LicenseClient-diego channel disconnected successfully.
 [Licensing::IpcConnector] Channel LicenseClient-diego-6000.5.8 doesn't exist
-[Licensing::Module] Successfully launched the LicensingClient (PId: 7396)
+[Licensing::Module] Successfully launched the LicensingClient (PId: 20020)
 Starting IPC server.
 Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-diego-6000.5.8, press Ctrl-C to exit.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego-6000.5.8" at "2026-08-22T06:05:47.1582916Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 7396, path: "C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego-6000.5.8" at "2026-08-22T23:21:04.4586835Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 20020, path: "C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              a2df6d24c33c4831aee8bbfca5f97dbf
-  Correlation Id:          022076431776953e33af2b75636ea860
-  External correlation Id: 6576442897445774035
+  Session Id:              b1efdbfb336a4c6597521efbea0a92df
+  Correlation Id:          4f61bce1f213d9e71214263f9ee3560f
+  External correlation Id: 1543434949493010332
   Machine Id:              SqA/XvkXO4pUJBp2v7ARfaTLiXo=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-diego-6000.5.8" (connect: 6.56s, validation: 0.52s, handshake: 0.03s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego-6000.5.8-notifications" at "2026-08-22T06:05:47.7074282Z"
-[Licensing::Module] Connected to LicensingClient (PId: 7396, launch time: 0.01, total connection time: 7.11s)
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-diego-6000.5.8" (connect: 6.56s, validation: 0.68s, handshake: 0.04s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego-6000.5.8-notifications" at "2026-08-22T23:21:05.1855187Z"
+[Licensing::Module] Connected to LicensingClient (PId: 20020, launch time: 0.03, total connection time: 7.28s)
 [Licensing::Client] Successfully updated the access token
-[Licensing::Module] Successfully updated the access token 9naV4eDNAn...
+[Licensing::Module] Successfully updated the access token kxqXcukFCb...
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 4674239151754-UnityPersXXXX
@@ -104,8 +104,8 @@ Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-diego-6000.5.8, p
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 20.72s
-[Licensing::Module] Licensing is initialized (took 19.67s).
+[Licensing::Module] Licensing Background thread has ended after 18.03s
+[Licensing::Module] Licensing is initialized (took 16.84s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -114,8 +114,8 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Artifact Garbage Collection - Removed 1 unused hashed content files
-Refreshing native plugins compatible for Editor in 3.09 ms, found 0 plugins.
+Artifact Garbage Collection - Removed 803 unused hashed content files
+Refreshing native plugins compatible for Editor in 3.26 ms, found 0 plugins.
 Initialize engine version: 6000.5.8f1 (5cb7df797b7d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me quedo o me voy/Assets
@@ -139,7 +139,7 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
 CodeReloadManager initialized
 ImportWorker Server TCP listen port: 0
 AcceleratorClientConnectionCallback - disconnected - :0
@@ -147,30 +147,30 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.623679 seconds.
+Registered in 0.737551 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.605 seconds
-Domain Reload Profiling: 6256ms
-	BeginReloadAssembly (433ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (8ms)
-	RebuildNativeTypeToScriptingClass (322ms)
-	initialDomainReloadingComplete (916ms)
-	LoadAllAssembliesAndSetupDomain (1969ms)
-		LoadAssemblies (406ms)
-		AnalyzeDomain (1849ms)
-			TypeCache.Refresh (1846ms)
-				TypeCache.ScanAssembly (1485ms)
-	FinalizeReload (2607ms)
+- Finished resetting the current domain, in  2.468 seconds
+Domain Reload Profiling: 6662ms
+	BeginReloadAssembly (454ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (9ms)
+	RebuildNativeTypeToScriptingClass (338ms)
+	initialDomainReloadingComplete (1059ms)
+	LoadAllAssembliesAndSetupDomain (2331ms)
+		LoadAssemblies (436ms)
+		AnalyzeDomain (2199ms)
+			TypeCache.Refresh (2196ms)
+				TypeCache.ScanAssembly (1769ms)
+	FinalizeReload (2471ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (120ms)
-			ProcessInitializeOnLoadAttributes (166ms)
-			ProcessInitializeOnLoadMethodAttributes (2229ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (135ms)
+			ProcessInitializeOnLoadAttributes (175ms)
+			ProcessInitializeOnLoadMethodAttributes (2062ms)
 [Licensing::Client] Successfully resolved entitlement details
 Application.AssetDatabase Initial Refresh Start
 [Package Manager] Restoring resolved packages state from cache
@@ -252,7 +252,7 @@ info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 34.7577ms
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 50.5913ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.5.8f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me quedo o me voy
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
@@ -270,393 +270,253 @@ info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
 info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
       Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 803.3609ms
-ExitCode: 0 Duration: 1s416ms
-[738/937    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-*** Tundra build success (1.29 seconds), 1 items updated, 937 evaluated
-AssetDatabase: script compilation time: 2.471685s
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 1134.7552ms
+ExitCode: 0 Duration: 1s811ms
+[738/937    1s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra build success (1.68 seconds), 1 items updated, 937 evaluated
+AssetDatabase: script compilation time: 3.084896s
 Begin MonoManager ReloadAssembly
-Refreshing native plugins compatible for Editor in 103.50 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 73.97 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.70 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.92 ms, found 4 plugins.
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.470 seconds
-Domain Reload Profiling: 9119ms
-	BeginReloadAssembly (429ms)
-		DisableScriptedObjects (58ms)
-		CreateAndSetChildDomain (165ms)
-	RebuildCommonClasses (11ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (3103ms)
-		LoadAssemblies (2760ms)
-		AnalyzeDomain (321ms)
-			TypeCache.Refresh (214ms)
-				TypeCache.ScanAssembly (201ms)
-			BuildScriptInfoCaches (95ms)
+- Finished resetting the current domain, in  5.928 seconds
+Domain Reload Profiling: 10037ms
+	BeginReloadAssembly (560ms)
+		DisableScriptedObjects (108ms)
+		CreateAndSetChildDomain (182ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (115ms)
+	LoadAllAssembliesAndSetupDomain (3393ms)
+		LoadAssemblies (3085ms)
+		AnalyzeDomain (326ms)
+			TypeCache.Refresh (215ms)
+				TypeCache.ScanAssembly (200ms)
+			BuildScriptInfoCaches (99ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (5472ms)
+	FinalizeReload (5929ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (104ms)
-			ProcessInitializeOnLoadAttributes (3470ms)
-			ProcessInitializeOnLoadMethodAttributes (238ms)
-			AfterProcessingInitializeOnLoad (10ms)
-		AwakeInstancesAfterBackupRestoration (36ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (3763ms)
+			ProcessInitializeOnLoadMethodAttributes (371ms)
+			AfterProcessingInitializeOnLoad (11ms)
+		AwakeInstancesAfterBackupRestoration (38ms)
 Starting new worker id: 0 with log in C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me quedo o me voy/Logs/AssetImportWorkerHW0.log
 
-Asset Pipeline Refresh (id=ad31611b532163f4489ef82fcb25cf98): Total: 23.300 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=ab80014d07cf58940a09a90cf162b17c): Total: 28.497 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	(Values over 0.05ms)
 	Summary:
 		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=16811 ms
-		Asset DB Callback time: managed=131 ms, native=56 ms
-		Scripting: domain reloads=1, domain reload time=3749 ms, compile time=2473 ms, other=77 ms
+		Asset DB Process Time: managed=0 ms, native=20963 ms
+		Asset DB Callback time: managed=71 ms, native=51 ms
+		Scripting: domain reloads=1, domain reload time=4232 ms, compile time=3087 ms, other=90 ms
 		Project Asset Count: scripts=1382, non-scripts=2412
 		Asset File Changes: new=0, changed=0, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokePackagesCallback: 59.949ms
-	ApplyChangesToAssetFolders: 1.054ms
-	Scan: 392.590ms
-	Collect global state as custom dependencies: 41.469ms
-	CategorizeScriptCompilationAssets: 2538.978ms
-	ProcessAssetsWithTransientArtifactChanges: 97.195ms
-	CategorizeAssets: 62.877ms
-	CompileScripts: 2473.291ms
-	ImportOutOfDateAssets: 5657.378ms (5595.766ms without children)
-		UnloadImportedAssets: 1.020ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.797ms
-		ImportSchedulerStart: 59.745ms
-	PostProcessAllAssets: 131.893ms
-		MonoPostProcessAllAssets: 131.780ms
-			SyncVS.PostprocessSyncProject 56.381ms
-			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 25.402ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.132ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 3.696ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 1.795ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.927ms
-			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.716ms
-			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.547ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.431ms
-			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.396ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.302ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.281ms
-	UnloadStreamsBegin: 3.453ms
-	PersistCurrentRevisions: 0.140ms
-	GenerateScriptTypeHashes: 1.885ms
-	GenerateScriptTypeSerializationHashes: 3.280ms
-	Untracked: 11829.054ms
+	InvokePackagesCallback: 54.819ms
+	ApplyChangesToAssetFolders: 1.106ms
+	Scan: 425.938ms
+	Collect global state as custom dependencies: 43.277ms
+	CategorizeScriptCompilationAssets: 3861.436ms
+	ProcessAssetsWithTransientArtifactChanges: 100.823ms
+	CategorizeAssets: 70.995ms
+	CompileScripts: 3087.106ms
+	ImportOutOfDateAssets: 6091.859ms (6024.979ms without children)
+		ReloadNativeAssets: 0.053ms
+		UnloadImportedAssets: 1.052ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.840ms
+		ImportSchedulerStart: 64.930ms
+	PostProcessAllAssets: 71.849ms
+		MonoPostProcessAllAssets: 71.716ms
+			SyncVS.PostprocessSyncProject 19.991ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 19.302ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 3.202ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.756ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 2.042ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.003ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.572ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.370ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.331ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.283ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.268ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.255ms
+	UnloadStreamsBegin: 3.424ms
+	PersistCurrentRevisions: 0.145ms
+	GenerateScriptTypeHashes: 4.745ms
+	GenerateScriptTypeSerializationHashes: 9.083ms
+	Untracked: 14673.376ms
 
 Application.AssetDatabase Initial Refresh End
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Scanning for USB devices : 8.199ms
+Scanning for USB devices : 9.386ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-Me quedo o me voy
-Worker ready: AssetImportWorkerHW0 0
 Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
 Loaded scene 'Assets/Escenario/EscenarioInicial.unity'
-	Deserialize:            21.036 ms
-	Integration:            463.067 ms
-	Integration of assets:  0.783 ms
-	Thread Wait Time:       0.027 ms
-	Total Operation Time:   484.913 ms
-Unloading 6640 unused Assets / (6.5 MB). Loaded Objects now: 7998.
-Memory consumption went from 421.1 MB to 414.6 MB.
-Total: 30.670600 ms (FindLiveObjects: 1.783400 ms CreateObjectMapping: 4.407800 ms MarkObjects: 13.372800 ms  DeleteObjects: 10.661800 ms)
+	Deserialize:            75.301 ms
+	Integration:            499.168 ms
+	Integration of assets:  0.484 ms
+	Thread Wait Time:       0.072 ms
+	Total Operation Time:   575.025 ms
+Unloading 6640 unused Assets / (7.7 MB). Loaded Objects now: 8707.
+Memory consumption went from 423.3 MB to 415.6 MB.
+Total: 37.626800 ms (FindLiveObjects: 2.726500 ms CreateObjectMapping: 5.483600 ms MarkObjects: 15.754600 ms  DeleteObjects: 13.221400 ms)
 
 [LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
+Worker ready: AssetImportWorkerHW0 0
 [LAYOUT] About to save layout C:\Users\diego\OneDrive\Documentos\GitHub\TP-Inicial---Me-quedo-o-me-voy\Me quedo o me voy\UserSettings\Layouts\default-6000.dwlt
 [LAYOUT] About to save layout C:/Users/diego/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
 [MODES] ModeService[default].InitializeCurrentMode
 [MODES] ModeService[default].RaiseModeChanged(default, default)
 <RI> Initializing input.
 Using Windows.Gaming.Input
-[Project] Loading completed in 70.324 seconds
-	Project init time: 				67.553 seconds
+[Project] Loading completed in 74.345 seconds
+	Project init time: 				70.754 seconds
 		Template init time: 		0.000 seconds
-		Package Manager init time: 		20.378 seconds
-		Asset Database init time: 		0.841 seconds
+		Package Manager init time: 		17.393 seconds
+		Asset Database init time: 		1.198 seconds
 		Global illumination init time: 	0.012 seconds
-		Assemblies load time: 			17.127 seconds
-		Unity extensions init time: 	0.045 seconds
-		Asset Database refresh time: 	23.300 seconds
-	Scene opening time: 			2.465 seconds
-##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1787378797336,"processId":34136,"projectLoad":70.3241705,"projectInit":67.5529617,"templateInit":0.0,"packageManagerInit":20.3783302,"assetDatabaseInit":0.8412209,"globalIlluminationInit":0.0123729,"assembliesLoad":17.1269083,"unityExtensionsInit":0.0450148,"assetDatabaseRefresh":23.3004875,"sceneOpening":2.464654}
-##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1787378797337,"processId":34136,"editorVersion":"6000.5.8f1 (5cb7df797b7d)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
-Asset Pipeline Refresh (id=8d9d298bbe294c9459630d5edc956043): Total: 0.154 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
-Start Indexing on Editor startup
-[Indexing] Starting Initial Indexing for Assets
-Created GICache directory at C:/Users/diego/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.060s, timestamps: [73.493 - 73.553]
+		Assemblies load time: 			18.976 seconds
+		Unity extensions init time: 	0.059 seconds
+		Asset Database refresh time: 	28.497 seconds
+	Scene opening time: 			3.077 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1787440921522,"processId":14000,"projectLoad":74.3451629,"projectInit":70.7540387,"templateInit":0.0,"packageManagerInit":17.3928722,"assetDatabaseInit":1.1980841,"globalIlluminationInit":0.01161,"assembliesLoad":18.975725,"unityExtensionsInit":0.0591136,"assetDatabaseRefresh":28.4968592,"sceneOpening":3.076992}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1787440921522,"processId":14000,"editorVersion":"6000.5.8f1 (5cb7df797b7d)","branch":"6000.5/staging","buildType":"Release","platform":"Windows"}
+Created GICache directory at C:/Users/diego/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.042s, timestamps: [77.598 - 77.640]
+[Licensing::Client] Successfully resolved entitlement details
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Client] Successfully updated the access token
-[Licensing::Module] Successfully updated access token: "9naV4eDN"... (expires: 2026-08-22T07:57:09Z)
-[Licensing::Client] Successfully resolved entitlement details
-Starting new worker id: 1 with log in C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me quedo o me voy/Logs/AssetImportWorkerHW1.log
-[Worker0] Imported GUID: 7cf5e34839f2a3f488f93e70b8585391 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene/Global Volume Profile.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'dd05efe6d2a308bbd9a330c98be7dab4') in 0.1819611 seconds
-[Worker0] Imported GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/Escenario/EscenarioInicial.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'af8e6b8f8cc9c21d2180369254e0bade') in 0.0343773 seconds
+[Licensing::Module] Successfully updated access token: "kxqXcukF"... (expires: 2026-08-23T00:06:26Z)
 UPID Received '7e9553de-eb65-4ff0-8bd1-b0d58885f18e'.
 [Licensing::Client] Successfully resolved entitlement details
-Worker ready: AssetImportWorkerHW1 1
 TrimDiskCacheJob: Current cache size 0mb
-Request Asset Garbage Collect because used heap size increased from 415.1 MB to 0.68 GB, exceeding the threshold of 256.0 MB.
-Unloading 95 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 155 unused Assets / (17.2 MB). Loaded Objects now: 9220.
-Memory consumption went from 0.68 GB to 0.66 GB.
-Total: 25.747400 ms (FindLiveObjects: 0.713600 ms CreateObjectMapping: 0.869300 ms MarkObjects: 17.141400 ms  DeleteObjects: 7.021600 ms)
+Asset Pipeline Refresh (id=d7c4f67e1387cb343aa937338655167a): Total: 0.130 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Asset Pipeline Refresh (id=0147c39b00477bd4eb6422523cdd8625): Total: 0.011 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=2947927cb051db644b693e83406bbe40): Total: 0.010 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=ef2be2e6a6466874c8f33da5be8a61a3): Total: 0.008 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=6196251b44ed7cd479d70cd5cce2796f): Total: 0.008 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Request Asset Garbage Collect because used heap size increased from 418.6 MB to 0.66 GB, exceeding the threshold of 256.0 MB.
+Unloading 70 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 160 unused Assets / (17.1 MB). Loaded Objects now: 10135.
+Memory consumption went from 0.66 GB to 0.64 GB.
+Total: 28.804600 ms (FindLiveObjects: 0.896800 ms CreateObjectMapping: 1.043300 ms MarkObjects: 20.216400 ms  DeleteObjects: 6.643800 ms)
 
-Reloading assemblies for play mode.
-Reloading assemblies after forced synchronous recompile.
+Asset Pipeline Refresh (id=7822d1944aa63da4cae7900e62eb29d6): Total: 0.011 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=db4ddbac82ec05b499fbfb31a2574b13): Total: 0.011 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=26393199029f5614e81e5f232f0cb010): Total: 0.008 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=989cc137cea351b4199f57a746d86715): Total: 0.008 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=17cd1e6efc8af384e8760ced633f6f39): Total: 0.009 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=292206d72c8a4c149a02f8d11c8c3c20): Total: 0.008 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=7ad5cbf3138b9b74b8e59b7352444312): Total: 0.007 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=16b01201f1f13994cafc0b7af5c1247f): Total: 0.011 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=a64153ad8891c1b4b93f2c97230298ba): Total: 0.008 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
 [Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-Refreshing native plugins compatible for Editor in 3.08 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.232 seconds
-Domain Reload Profiling: 3544ms
-	BeginReloadAssembly (947ms)
-		DisableScriptedObjects (166ms)
-		CreateAndSetChildDomain (538ms)
-	RebuildCommonClasses (11ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (89ms)
-	LoadAllAssembliesAndSetupDomain (243ms)
-		LoadAssemblies (193ms)
-		AnalyzeDomain (46ms)
-			TypeCache.Refresh (9ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (2233ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (116ms)
-			ProcessInitializeOnLoadAttributes (524ms)
-			ProcessInitializeOnLoadMethodAttributes (201ms)
-			AfterProcessingInitializeOnLoad (11ms)
-		AwakeInstancesAfterBackupRestoration (801ms)
-No restricted APIs configured; Validation skipped.
-Checking 23 assemblies for restricted APIs found 0 usage(s) in 6 ms
-Refreshing native plugins compatible for Editor in 3.07 ms, found 4 plugins.
 
-Asset Pipeline Refresh (id=759298ce5a4d08b4c93969cca2be828f): Total: 5.756 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
-	(Values over 0.05ms)
-	Summary:
-		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=2697 ms
-		Asset DB Callback time: managed=1041 ms, native=615 ms
-		Scripting: domain reloads=1, domain reload time=1401 ms, compile time=2 ms, other=0 ms
-		Project Asset Count: scripts=1382, non-scripts=2412
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
-		Scan Filter Count: 0
-	InvokePackagesCallback: 3.421ms
-	ApplyChangesToAssetFolders: 0.456ms
-	Collect global state as custom dependencies: 4.267ms
-	ProcessAssetsWithTransientArtifactChanges: 275.760ms
-	CategorizeAssets: 58.250ms
-	CompileScripts: 1.526ms
-	ImportOutOfDateAssets: 2296.083ms (2254.453ms without children)
-		CollectScriptTypesHashes: 2.164ms
-		ReloadNativeAssets: 1.473ms
-		UnloadImportedAssets: 2.307ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.895ms
-		ImportSchedulerStart: 36.916ms
-	PostProcessAllAssets: 1641.350ms
-		AssemblyValidation.PostprocessAllAssets 50.926ms
-		PostprocessAssetsUpdateCachedIcon 23.212ms
-		PostProcessCallbackCreateDeferredMaterials 21.476ms
-		RaytracingShaderImportPostprocess 14.047ms
-		ShaderAssetModifiedCallback 12.326ms
-		ComputeShaderImportPostprocess 12.108ms
-		SpeedTreeImporter.PostprocessAllAssets 9.230ms
-		LocalizationDatabase.AssetDatabasePostprocessCallback 5.292ms
-		BlockShaderImporter.PostprocessAllAssets 4.583ms
-		XRBuildSystem.XRAssetImported 0.851ms
-		MonoPostProcessAllAssets: 1037.126ms
-			SyncVS.PostprocessSyncProject 323.708ms
-			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 229.351ms
-			AssetPostprocessor.OnPostprocessAllAssets 125.488ms
-			PostProcessor.OnPostprocessAllAssets 59.798ms
-			MaterialPostprocessor.OnPostprocessAllAssets 40.355ms
-			InputActionAssetPostprocessor.OnPostprocessAllAssets 40.245ms
-			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 40.173ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 35.452ms
-			AssetChangedListener.OnPostprocessAllAssets 23.683ms
-			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 15.237ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 8.292ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 8.085ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 6.946ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 3.076ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.364ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 1.276ms
-			ProjectSettingsPostprocessor.OnPostprocessAllAssets 1.238ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.874ms
-			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.801ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.684ms
-			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.498ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.469ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.422ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.405ms
-			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.386ms
-			AssetEvents.OnPostprocessAllAssets 0.381ms
-			SamplePostprocessor.OnPostprocessAllAssets 0.351ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 0.324ms
-			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.307ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.180ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.172ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.156ms
-			AssetReloadNotifier.OnPostprocessAllAssets 0.155ms
-			AudioContainerPostProcessor.OnPostprocessAllAssets 0.096ms
-	PostAssetChangesProfiler: 14.693ms
-	GatherAllCurrentPrimaryImportResultRevisions: 0.174ms
-	UnloadStreamsBegin: 1.752ms
-	PersistCurrentRevisions: 0.123ms
-	GenerateScriptTypeHashes: 4.033ms
-	GenerateScriptTypeSerializationHashes: 6.588ms
-	Untracked: 1447.713ms
+[main 2026-08-22T23:35:34.504Z] StorageMainService: creating application shared storage
+[main 2026-08-22T23:35:34.850Z] [shared storage] Creating shared storage database at 'c:\Users\diego\.vscode-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[main 2026-08-22T23:35:34.853Z] [shared storage] Initializing fallback application storage (path: c:\Users\diego\AppData\Roaming\Code\User\globalStorage\state.vscdb)
+[main 2026-08-22T23:35:34.933Z] [shared storage] Fallback application storage initialized with 137 items
+[main 2026-08-22T23:35:34.953Z] update#setState idle
+[main 2026-08-22T23:35:35.585Z] AgentHostProcessManager: agent host started
+(node:7648) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
+[main 2026-08-22T23:35:39.419Z] [AgentHost:stderr] (node:13728) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
 
-Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            3.586 ms
-	Integration:            1005.979 ms
-	Integration of assets:  0.007 ms
-	Thread Wait Time:       0.026 ms
-	Total Operation Time:   1009.598 ms
+Unknown channel: agentHostClientProxy
+Unknown channel: agentHostClientProxy
+Asset Pipeline Refresh (id=efb650c4070c4874ca34b57780d81497): Total: 0.019 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+[main 2026-08-22T23:35:44.735Z] Extension host with pid 28548 exited with code: 0, signal: unknown.
+Starting new worker id: 1 with log in C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me quedo o me voy/Logs/AssetImportWorkerHW1.log
+[Worker0] Imported GUID: d15ac5b27badac44e9535c7f31e5922e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures - Importer: PreviewImporter -> (ImportResultId: 'b190fccbdc936eb036083890b0bfd6a8') in 0.0365738 seconds
+Worker ready: AssetImportWorkerHW1 1
+[Worker0] Imported GUID: d0234ba368eeec9418390da711bfdad0 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials - Importer: PreviewImporter -> (ImportResultId: '48d583dd18297611eacdefacd01374ac') in 0.0162948 seconds
+[Worker0] Imported GUID: aa50052c471ecdb43970d0115bb3a704 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments - Importer: PreviewImporter -> (ImportResultId: 'de2ed53e1ceaab713ad94b1cce407512') in 0.012833 seconds
+Starting new worker id: 2 with log in C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me quedo o me voy/Logs/AssetImportWorkerHW2.log
+[Worker0] Imported GUID: 34b0f56bfe7f4f249a90646158c51028 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-1.mat - Importer: PreviewImporter -> (ImportResultId: 'd118e82f2242bd7dcdcee24de19fc57b') in 0.8892118 seconds
+[Worker0] Imported GUID: 0c1f7fd3b4f294643bfff7973f272be4 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-2.mat - Importer: PreviewImporter -> (ImportResultId: '0b138ba1f509443afd19c552f756f06d') in 0.036715 seconds
+[Worker0] Imported GUID: 6f8a22a830d0bfc4e92ab0cc0aa1b8b5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-3.mat - Importer: PreviewImporter -> (ImportResultId: '84bf123a0edbfcef45458b13481cf75e') in 0.0374811 seconds
+[Worker0] Imported GUID: 14562ff1e56b3424c83b07a3e25b9414 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-2.mat - Importer: PreviewImporter -> (ImportResultId: '36423d58f9458d5352b4d94e6f79f84a') in 0.0396312 seconds
+[Worker0] Imported GUID: 3e286d3a961ac6d4bb715589537a3dc1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-3.mat - Importer: PreviewImporter -> (ImportResultId: 'ac27a9b78b658a0d51110bb7bd3e670c') in 0.0392226 seconds
+[Worker0] Imported GUID: b10ef4f07ce157c499f1eff989a7614e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ocean.mat - Importer: PreviewImporter -> (ImportResultId: 'af25679225e6d2bbe20fb3c8703a6617') in 0.0786405 seconds
+[Worker0] Imported GUID: de715bd0e61c62a4cadff578735a5794 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-3.mat - Importer: PreviewImporter -> (ImportResultId: '5b47a6d5fd2744a05c28d97642e7f5f8') in 0.0420991 seconds
+[Worker0] Imported GUID: fab313412e0d2c74789fda3ec4afed43 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-2.mat - Importer: PreviewImporter -> (ImportResultId: '99d5544349d5af8aa905a521488cd925') in 0.0339585 seconds
+[Worker0] Imported GUID: 81fa015d0e3e3734da6a6a94ddbe2c1b - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-2.mat - Importer: PreviewImporter -> (ImportResultId: '65e1f42bd4d4d29ab8192a8726aaf6ee') in 0.039609 seconds
+[Worker0] Imported GUID: d742b67c3d5e5f44ebe4f2553652d5cf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-1.mat - Importer: PreviewImporter -> (ImportResultId: '815a6769c5d52d78612dbd25c97a5ea4') in 0.034523 seconds
+[Worker0] Imported GUID: 2c09ef49c13be054891579dd4de949de - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-1.mat - Importer: PreviewImporter -> (ImportResultId: 'f249f99bec6ab03d66c9b31e22f8a90d') in 0.0346906 seconds
+[Worker0] Imported GUID: d7490659138a0154da86c55a554012eb - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-4.mat - Importer: PreviewImporter -> (ImportResultId: 'a4839ce988b856e53c2394330b6d49c0') in 0.0347471 seconds
+[Worker0] Imported GUID: f630717f81f57464b8e873cba8340d98 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-2.mat - Importer: PreviewImporter -> (ImportResultId: 'a136e5434fff3335c261f4d5f0978db8') in 0.0391492 seconds
+[Worker0] Imported GUID: 1e9f84486bb4bf74fa49fc80ba3c345c - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-5.mat - Importer: PreviewImporter -> (ImportResultId: '1172c2674643d8d6baae301c2f888db3') in 0.0350636 seconds
+[Worker0] Imported GUID: f45a00a6d60a4544d859023c36429b66 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-6.mat - Importer: PreviewImporter -> (ImportResultId: '8304b15b92374eb5234086b8ed99b13f') in 0.0371167 seconds
+[Worker0] Imported GUID: 8b1f7c9e230f99f46a4e2c246a99f84e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-7.mat - Importer: PreviewImporter -> (ImportResultId: '5cfcc05ba714a4711063b1acc3881a44') in 0.0343914 seconds
+[Worker0] Imported GUID: 4bca999ab1da9294ea5d575e41073b88 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-4.mat - Importer: PreviewImporter -> (ImportResultId: 'd748bc374ff09ea9d4a3923470e22a59') in 0.0385295 seconds
+[Worker0] Imported GUID: 49b91a815dee8974d9439e1311858a09 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-8.mat - Importer: PreviewImporter -> (ImportResultId: '827b8ade3d57da11125410e8970a9e80') in 0.0343873 seconds
+[Worker1] Imported GUID: cb87884a8ae01b54cb01f106d1483267 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-2.mat - Importer: PreviewImporter -> (ImportResultId: 'cab375a7c15fec5506c64a880633c495') in 0.9588578 seconds
+[Worker0] Imported GUID: 00e34802479f9fd459b030739febd8a6 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-1.mat - Importer: PreviewImporter -> (ImportResultId: '9fc319d63a7a88d4810e1f9af1144c1f') in 0.0445703 seconds
+[Worker0] Imported GUID: 151dc79f21cceaf42a271efb37da099c - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-4.mat - Importer: PreviewImporter -> (ImportResultId: 'af506e54aa9d14b1a64eab920034bdf0') in 0.0320834 seconds
+[Worker1] Imported GUID: 130ece05034e8344992e207b56a66bae - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-1.mat - Importer: PreviewImporter -> (ImportResultId: '67c9ba25f88fd7b3d4f551c77cdc2a80') in 0.0441543 seconds
+[Worker0] Imported GUID: 8d8f5ea4461ee664996547d6fbdfb054 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-3.mat - Importer: PreviewImporter -> (ImportResultId: '3b096fa92bcdbe58b7d9e46ec9855c10') in 0.036879 seconds
+[Worker1] Imported GUID: 228d3ebd5ea75474e9e2536eaabc8a1f - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-6.mat - Importer: PreviewImporter -> (ImportResultId: '01f0643df470f136ce7158419efbbb9f') in 0.0379456 seconds
+[Worker0] Imported GUID: 5a7e3987da126b3448d7e55a9ec0fe97 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-3.mat - Importer: PreviewImporter -> (ImportResultId: 'cf610f73cc9c914e2624891f10539c10') in 0.0329782 seconds
+[Worker1] Imported GUID: ab6e2fd1d942a394b9c0e3ce70d9ad63 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-1.mat - Importer: PreviewImporter -> (ImportResultId: '4c3c00b50499774c04f1696e5730bfb3') in 0.034709 seconds
+[Worker0] Imported GUID: a981f91f7749c814bae01f18e53d2a5f - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-9.mat - Importer: PreviewImporter -> (ImportResultId: '21d46d9b5c1938edce4204726f4603ba') in 0.034176 seconds
+[Worker1] Imported GUID: 5545c155a6153ed4098064cd72797dc6 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-5.mat - Importer: PreviewImporter -> (ImportResultId: 'd772fc0a59a511d0da1c60166a475688') in 0.0362776 seconds
+Worker ready: AssetImportWorkerHW2 2
+Importing 'GUID: b0005086df78d8745981ed1d06db52a5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4.mat' with importer (NativeFormatImporter)
+Imported 'GUID: b0005086df78d8745981ed1d06db52a5' -> (Import Result ID: 'c8b8dd201696cecd35a528a7fcd85eb1') in 0.017 seconds [static dependencies only]. Details - ImportResultOutputID=f2410578769adcb662a22359b71874ed DependenciesID=2179ce13285c8deb0b00852fa169bfbc StaticDependenciesID=e15845faccfd99702e4177ee8b3b6161 
+Refreshing native plugins compatible for Editor in 3.65 ms, found 4 plugins.
+Asset Pipeline Refresh (id=410a0c0a03e271f409eb7c485a642fea): Total: 0.244 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: b1127f4a89153674489323ca3ba7d739 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4 1.mat' with importer (NativeFormatImporter)
+Imported 'GUID: b1127f4a89153674489323ca3ba7d739' -> (Import Result ID: 'c38d56d5900be50e987b3172f8be8110') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=7ec52473a6be98e79817061d1c819e0b DependenciesID=0990f4d9ff0e41cbe1bfe5f78a5051dc StaticDependenciesID=6221e0d6e949f9ea25d19db5802170d4 
+Refreshing native plugins compatible for Editor in 4.12 ms, found 4 plugins.
+Asset Pipeline Refresh (id=19ba307b6b096b344a159d307340aabb): Total: 0.143 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Worker1] Imported GUID: b0005086df78d8745981ed1d06db52a5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4.mat - Importer: PreviewImporter -> (ImportResultId: 'a2e07f6fc9d4a2d724b9ed0c3320bde1') in 0.0403537 seconds
+[Worker0] Imported GUID: b1127f4a89153674489323ca3ba7d739 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4 1.mat - Importer: PreviewImporter -> (ImportResultId: '4bf27307143b55353055cdd10df0166a') in 0.0358217 seconds
+[Worker0] Imported GUID: b1127f4a89153674489323ca3ba7d739 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4 1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'dd4f9dfd78e90666dd8b22f84ccdd32b') in 0.1160444 seconds
+[Worker2] Imported GUID: b0005086df78d8745981ed1d06db52a5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '9845739321d09c86a85ade2f6ea6ed4f') in 0.1663727 seconds
+[Worker2] Imported GUID: 873128cb2561cd44181c5b4ea07410b2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-1.png - Importer: PreviewImporter -> (ImportResultId: 'e48dd1cdff9f7fef0cf1745715e068b0') in 0.0943957 seconds
+[Worker0] Imported GUID: 160973fa57fae734c94490fde7de1b10 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Land.png - Importer: PreviewImporter -> (ImportResultId: '70889d83a566b5294dc3b9924d62474c') in 0.0715066 seconds
+[Worker1] Imported GUID: 660609ae00fb200499331d08c1bdba65 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Mask.png - Importer: PreviewImporter -> (ImportResultId: '51882679e76ef925161b8fd4c707525d') in 0.073544 seconds
+[Worker2] Imported GUID: 30837d99204c267469790c935fcc77af - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-2.png - Importer: PreviewImporter -> (ImportResultId: '59060118d0c9a57b45117635006fa37d') in 0.0302145 seconds
+[Worker0] Imported GUID: 5037bd3ff9093da4f81bb8f690104168 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-3.png - Importer: PreviewImporter -> (ImportResultId: '33e7e048e057b4445a27bb11298a1dcd') in 0.0327389 seconds
+[Worker1] Imported GUID: 0b045f30bfc32464780c25865b113dfd - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/SkyColor.png - Importer: PreviewImporter -> (ImportResultId: '714e7454f22558465eba41ea5942f90e') in 0.0333698 seconds
+[Worker0] Imported GUID: 727a75301c3d24613a3ebcec4a24c2c8 - Path: Assets/TutorialInfo/Icons/URP.png - Importer: PreviewImporter -> (ImportResultId: 'b29ef5ffd7574846690383f8dd97c5f2') in 0.0913222 seconds
+[Worker2] Imported GUID: 656a59a5ff93c46498416d97e5c16b66 - Path: Assets/Skybox/Cubemaps/sunset.hdr - Importer: PreviewImporter -> (ImportResultId: '350c3b8804c2135a45cc8f09f91a63bf') in 0.7082119 seconds
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully resolved entitlement details
-Concave Mesh Colliders are not supported when used with dynamic Rigidbody GameObjects.
-Either make the Mesh Collider convex, or make the Rigidbody kinematic. Scene hierarchy path "Capsule", Mesh asset path "Library/unity default resources", Mesh name "Capsule"
-Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
-Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            1.859 ms
-	Integration:            269.920 ms
-	Integration of assets:  0.002 ms
-	Thread Wait Time:       0.001 ms
-	Total Operation Time:   271.782 ms
-Unloading 5978 unused Assets / (5.3 MB). Loaded Objects now: 9169.
-Memory consumption went from 0.66 GB to 0.65 GB.
-Total: 39.468200 ms (FindLiveObjects: 1.293200 ms CreateObjectMapping: 2.999700 ms MarkObjects: 30.767300 ms  DeleteObjects: 4.405600 ms)
 
-[Licensing::Client] Successfully resolved entitlement details
-Asset Pipeline Refresh (id=bf9186a1940bfc24181e7101f0a05a1d): Total: 0.010 seconds - Initiated by StopAssetImportingV2(ForceUpdate)
-Reloading assemblies for play mode.
-Reloading assemblies after forced synchronous recompile.
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-Refreshing native plugins compatible for Editor in 2.88 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.208 seconds
-Domain Reload Profiling: 3622ms
-	BeginReloadAssembly (1021ms)
-		DisableScriptedObjects (119ms)
-		CreateAndSetChildDomain (681ms)
-	RebuildCommonClasses (14ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (102ms)
-	LoadAllAssembliesAndSetupDomain (254ms)
-		LoadAssemblies (194ms)
-		AnalyzeDomain (49ms)
-			TypeCache.Refresh (11ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (2210ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (109ms)
-			ProcessInitializeOnLoadAttributes (485ms)
-			ProcessInitializeOnLoadMethodAttributes (187ms)
-			AfterProcessingInitializeOnLoad (10ms)
-		AwakeInstancesAfterBackupRestoration (730ms)
-
-Asset Pipeline Refresh (id=7d8ffdb0c0e69564893bfbf39a710a86): Total: 3.947 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
-	(Values over 0.05ms)
-	Summary:
-		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=0 ms, native=2390 ms
-		Asset DB Callback time: managed=53 ms, native=0 ms
-		Scripting: domain reloads=1, domain reload time=1501 ms, compile time=2 ms, other=0 ms
-		Project Asset Count: scripts=1382, non-scripts=2412
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
-		Scan Filter Count: 0
-	InvokePackagesCallback: 2.985ms
-	ApplyChangesToAssetFolders: 0.451ms
-	Collect global state as custom dependencies: 4.053ms
-	ProcessAssetsWithTransientArtifactChanges: 0.262ms
-	CategorizeAssets: 56.698ms
-	CompileScripts: 1.525ms
-	ImportOutOfDateAssets: 2275.970ms (2229.720ms without children)
-		CollectScriptTypesHashes: 1.221ms
-		ReloadNativeAssets: 1.397ms
-		UnloadImportedAssets: 0.372ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.712ms
-		ImportSchedulerStart: 43.736ms
-	PostProcessAllAssets: 53.779ms
-		MonoPostProcessAllAssets: 53.773ms
-			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 229.351ms
-			AssetPostprocessor.OnPostprocessAllAssets 125.488ms
-			PostProcessor.OnPostprocessAllAssets 59.798ms
-			MaterialPostprocessor.OnPostprocessAllAssets 40.355ms
-			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 40.173ms
-			TextAssetPostProcessor.OnPostprocessAllAssets 35.452ms
-			AssetChangedListener.OnPostprocessAllAssets 23.683ms
-			SyncVS.PostprocessSyncProject 15.611ms
-			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 13.276ms
-			BuilderAssetPostprocessor.OnPostprocessAllAssets 8.292ms
-			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 3.076ms
-			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.908ms
-			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.472ms
-			SpeedTreePostProcessor.OnPostprocessAllAssets 1.276ms
-			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.974ms
-			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.911ms
-			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.874ms
-			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.684ms
-			EditModeScopePostprocessor.OnPostprocessAllAssets 0.557ms
-			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.498ms
-			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.475ms
-			AudioMixerPostprocessor.OnPostprocessAllAssets 0.405ms
-			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.387ms
-			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.386ms
-			AssetEvents.OnPostprocessAllAssets 0.381ms
-			SamplePostprocessor.OnPostprocessAllAssets 0.351ms
-			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.324ms
-			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.307ms
-			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.197ms
-			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.192ms
-			ConfigAssetsTracker.OnPostprocessAllAssets 0.180ms
-			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.156ms
-			AssetReloadNotifier.OnPostprocessAllAssets 0.155ms
-			AudioContainerPostProcessor.OnPostprocessAllAssets 0.096ms
-	GatherAllCurrentPrimaryImportResultRevisions: 0.169ms
-	PersistCurrentRevisions: 0.122ms
-	GenerateScriptTypeHashes: 2.825ms
-	GenerateScriptTypeSerializationHashes: 4.664ms
-	Untracked: 1542.701ms
-
-Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            3.203 ms
-	Integration:            1012.535 ms
-	Integration of assets:  0.013 ms
-	Thread Wait Time:       0.015 ms
-	Total Operation Time:   1015.766 ms
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Client] Successfully resolved entitlement details
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Loaded scene 'Temp/__Backupscenes/0.backup'
-	Deserialize:            2.345 ms
-	Integration:            241.199 ms
-	Integration of assets:  0.006 ms
-	Thread Wait Time:       0.006 ms
-	Total Operation Time:   243.556 ms
-Unloading 54 unused Assets / (366.0 KB). Loaded Objects now: 9156.
-Memory consumption went from 0.63 GB to 0.63 GB.
-Total: 27.704600 ms (FindLiveObjects: 0.704100 ms CreateObjectMapping: 1.148800 ms MarkObjects: 25.566900 ms  DeleteObjects: 0.283500 ms)
-
-[Licensing::Client] Successfully resolved entitlement details
+[main 2026-08-22T23:38:09.119Z] StorageMainService: creating application shared storage
+[main 2026-08-22T23:38:09.397Z] [shared storage] Creating shared storage database at 'c:\Users\diego\.vscode-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[main 2026-08-22T23:38:09.403Z] [shared storage] Initializing fallback application storage (path: c:\Users\diego\AppData\Roaming\Code\User\globalStorage\state.vscdb)
+[main 2026-08-22T23:38:09.443Z] [shared storage] Fallback application storage initialized with 137 items
+[main 2026-08-22T23:38:09.456Z] update#setState idle
+Asset Pipeline Refresh (id=b25051cf85643ea4380f761d2141dbd6): Total: 0.036 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+[Worker2] Imported GUID: 1cde0e200e792cb4491204276a656490 - Path: Assets/Skybox/Cubemaps/daytime.hdr - Importer: PreviewImporter -> (ImportResultId: '7ec3c84f6017d8f0db4ca36687e9f8b9') in 0.1351547 seconds
+The operation "SoftDelete" cannot be executed because the selection is a root folder or an immutable asset.
+[Worker2] Imported GUID: 900020bfbf6587d4585d9a2820e456f2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_1.prefab - Importer: PreviewImporter -> (ImportResultId: 'c977a20bf19c4444d5c272f51c5ddc33') in 0.0572178 seconds
+Asset Pipeline Refresh (id=9b8a031db4d22244fbf1b634cd439f4a): Total: 0.011 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Importing 'GUID: b0005086df78d8745981ed1d06db52a5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4.mat' with importer (NativeFormatImporter)
+Imported 'GUID: b0005086df78d8745981ed1d06db52a5' -> (Import Result ID: 'c8b8dd201696cecd35a528a7fcd85eb1') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=f2410578769adcb662a22359b71874ed DependenciesID=2179ce13285c8deb0b00852fa169bfbc StaticDependenciesID=e15845faccfd99702e4177ee8b3b6161 
+Importing 'GUID: b1127f4a89153674489323ca3ba7d739 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4 1.mat' with importer (NativeFormatImporter)
+Imported 'GUID: b1127f4a89153674489323ca3ba7d739' -> (Import Result ID: 'd76e8d3e8b76cf34b5d4c989cfbc23c9') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=7ec52473a6be98e79817061d1c819e0b DependenciesID=7c78fe46c226951beac960bf870564f0 StaticDependenciesID=546c5a9beb60c8429dbab00427142e60 
+Refreshing native plugins compatible for Editor in 4.38 ms, found 4 plugins.
+Asset Pipeline Refresh (id=186d75a5a257c684599f7de3eead073e): Total: 0.117 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/Escenario/EscenarioInicial.unity' with importer (DefaultImporter)
+Imported 'GUID: 70bb87f4f30b2dc47ba571c163315f6b' -> (Import Result ID: 'e49989eef0110ee9ec8b0c81bfa75ee0') in 0.013 seconds [static dependencies only]. Details - ImportResultOutputID=d57512472ba560ad9f393ca13d04b0ff DependenciesID=4015f5d67856716937e0a19c59da3249 StaticDependenciesID=160cbfb7bc5377a3b7e5c15ab5edc06c 
+Refreshing native plugins compatible for Editor in 3.37 ms, found 4 plugins.
+Asset Pipeline Refresh (id=e2d2cee0563130242bf64f422df65031): Total: 0.131 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Worker2] Imported GUID: b1127f4a89153674489323ca3ba7d739 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4 1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: 'ef53c2b19159c800f823a67569e56ded') in 0.0279309 seconds
+[Worker0] Imported GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/Escenario/EscenarioInicial.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '570c177943fd1f585da91c818c9c8b29') in 0.0323229 seconds
+Importing 'GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/Escenario/EscenarioInicial.unity' with importer (DefaultImporter)
+Imported 'GUID: 70bb87f4f30b2dc47ba571c163315f6b' -> (Import Result ID: '9293294057adfc6cbb05cd112a618563') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=d57512472ba560ad9f393ca13d04b0ff DependenciesID=0c9f9f8360dd41c71162327b01347cd5 StaticDependenciesID=724cbedd67a9ac13c706b78ebe87ff1f 
+Refreshing native plugins compatible for Editor in 3.27 ms, found 4 plugins.
+Asset Pipeline Refresh (id=2034d79d1ffb0164da61a422d51c812a): Total: 0.111 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Worker2] Imported GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/Escenario/EscenarioInicial.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '3f476ee3a00952519087387c9444a883') in 0.0326345 seconds
