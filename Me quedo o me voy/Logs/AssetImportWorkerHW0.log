@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.5/staging' branch; Version is '6000.5.8f1 (5cb7df797b7d) revision 6076383'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego" at "2026-08-21T19:51:23.3889851Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego" at "2026-08-22T02:13:19.9356236Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 20373 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-08-21T19:51:23Z
+Date: 2026-08-22T02:13:19Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.5.8f1\Editor\Unity.exe
@@ -19,9 +19,9 @@ C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me qued
 -logFile
 Logs/AssetImportWorkerHW0.log
 -srvPort
-49317
+64992
 -parentPid
-35304
+25468
 -analyticsCloudUserId
 anonymous
 -analyticsCloudProjectId
@@ -34,6 +34,8 @@ anonymous
 8f54ceb502acc956019a471163f97363b3e9c222
 -cbmMachineId
 SqA/XvkXO4pUJBp2v7ARfaTLiXo=
+-licensingIpc
+LicenseClient-diego
 -noDiagnosticSwitchPersistentStore
 -job-worker-count
 5
@@ -82,14 +84,14 @@ C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me qued
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [23252]  Target information:
+Player connection [1576]  Target information:
 
-Player connection [23252]  * "[IP] 169.254.13.135 [Port] 0 [Flags] 2 [Guid] 2748164044 [EditorId] 2748164044 [Version] 1048832 [Id] WindowsEditor(7,DiegoPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [1576]  * "[IP] 169.254.13.135 [Port] 0 [Flags] 2 [Guid] 3123785508 [EditorId] 3123785508 [Version] 1048832 [Id] WindowsEditor(7,DiegoPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [23252]  * "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2748164044 [EditorId] 2748164044 [Version] 1048832 [Id] WindowsEditor(7,DiegoPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [1576]  * "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 3123785508 [EditorId] 3123785508 [Version] 1048832 [Id] WindowsEditor(7,DiegoPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [23252] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [23252] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1576] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [1576] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -101,7 +103,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 11.53 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 6.86 ms, found 4 plugins.
 Initialize engine version: 6000.5.8f1 (5cb7df797b7d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/diego/OneDrive/Documentos/GitHub/TP-Inicial---Me-quedo-o-me-voy/Me quedo o me voy/Assets
@@ -120,13 +122,13 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003998 seconds.
+Registered in 0.006016 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -135,23 +137,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.894 seconds
-Domain Reload Profiling: 1743ms
-	BeginReloadAssembly (192ms)
-	RebuildCommonClasses (9ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (109ms)
-	LoadAllAssembliesAndSetupDomain (514ms)
-		LoadAssemblies (188ms)
-		AnalyzeDomain (346ms)
-			TypeCache.Refresh (343ms)
-				TypeCache.ScanAssembly (316ms)
-	FinalizeReload (896ms)
+- Finished resetting the current domain, in  0.776 seconds
+Domain Reload Profiling: 1639ms
+	BeginReloadAssembly (220ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (133ms)
+	LoadAllAssembliesAndSetupDomain (476ms)
+		LoadAssemblies (215ms)
+		AnalyzeDomain (359ms)
+			TypeCache.Refresh (357ms)
+				TypeCache.ScanAssembly (338ms)
+	FinalizeReload (777ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (232ms)
-			ProcessInitializeOnLoadAttributes (145ms)
-			ProcessInitializeOnLoadMethodAttributes (345ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (137ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (336ms)
 Initializing Unity extensions:
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
@@ -159,19 +161,19 @@ Initializing Unity extensions:
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-diego"
 [Licensing::IpcConnector] LicenseClient-diego channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego-6000.5.8" at "2026-08-21T19:51:26.9032802Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9588, path: "C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego-6000.5.8" at "2026-08-22T02:13:23.3094069Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 6780, path: "C:/Program Files/Unity/Hub/Editor/6000.5.8f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              633020b68e0649e5a7ac65411cf69e68
-  Correlation Id:          5ae4c23c8cf04abf7d83d0e1e0442cd2
-  External correlation Id: 7978641385767343371
+  Session Id:              64087546a4dc44e4a15678e46a0d3261
+  Correlation Id:          e46d788600c089af0c7504294bc9a670
+  External correlation Id: 7702273474566821824
   Machine Id:              SqA/XvkXO4pUJBp2v7ARfaTLiXo=
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-diego-6000.5.8" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego-6000.5.8-notifications" at "2026-08-21T19:51:26.9337397Z"
-[Licensing::Module] Licensing Background thread has ended after 3.55s
-[Licensing::Module] Licensing is initialized (took 0.25s).
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-diego-6000.5.8-notifications" at "2026-08-22T02:13:23.3285416Z"
+[Licensing::Module] Licensing Background thread has ended after 3.39s
+[Licensing::Module] Licensing is initialized (took 0.19s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 4674239151754-UnityPersXXXX
@@ -183,888 +185,610 @@ Curl error 3: URL rejected: Malformed input to a URL function
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-Refreshing native plugins compatible for Editor in 5.12 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.88 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 3.69 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.91 ms, found 4 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.134 seconds
-Domain Reload Profiling: 2467ms
-	BeginReloadAssembly (318ms)
-		DisableScriptedObjects (15ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (10ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (94ms)
-	LoadAllAssembliesAndSetupDomain (887ms)
-		LoadAssemblies (512ms)
-		AnalyzeDomain (354ms)
-			TypeCache.Refresh (244ms)
+- Finished resetting the current domain, in  1.012 seconds
+Domain Reload Profiling: 2478ms
+	BeginReloadAssembly (348ms)
+		DisableScriptedObjects (22ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (98ms)
+	LoadAllAssembliesAndSetupDomain (977ms)
+		LoadAssemblies (598ms)
+		AnalyzeDomain (357ms)
+			TypeCache.Refresh (247ms)
 				TypeCache.ScanAssembly (226ms)
 			BuildScriptInfoCaches (102ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (1135ms)
+	FinalizeReload (1013ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (128ms)
-			ProcessInitializeOnLoadAttributes (412ms)
-			ProcessInitializeOnLoadMethodAttributes (183ms)
-			AfterProcessingInitializeOnLoad (12ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (358ms)
+			ProcessInitializeOnLoadMethodAttributes (157ms)
+			AfterProcessingInitializeOnLoad (10ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 AcceleratorClientConnectionCallback - disconnected - :0
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 3.18 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
 Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
 Curl error 3: URL rejected: Malformed input to a URL function
-Unloading 6627 unused Assets / (7.8 MB). Loaded Objects now: 7590.
-Memory consumption went from 332.0 MB to 324.2 MB.
-Total: 18.793000 ms (FindLiveObjects: 1.213100 ms CreateObjectMapping: 2.902200 ms MarkObjects: 7.282200 ms  DeleteObjects: 7.390000 ms)
+Unloading 6627 unused Assets / (6.4 MB). Loaded Objects now: 7590.
+Memory consumption went from 332.2 MB to 325.7 MB.
+Total: 18.067500 ms (FindLiveObjects: 1.373000 ms CreateObjectMapping: 3.401900 ms MarkObjects: 7.873700 ms  DeleteObjects: 5.415000 ms)
 
 ========================================================================
 Received Prepare
 AcceleratorClientConnectionCallback - disconnected - :0
-Refreshing native plugins compatible for Editor in 3.04 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.74 ms, found 4 plugins.
 Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 22 unused Assets / (2.6 MB). Loaded Objects now: 7590.
-Memory consumption went from 324.7 MB to 322.1 MB.
-Total: 9.614500 ms (FindLiveObjects: 0.643700 ms CreateObjectMapping: 1.151600 ms MarkObjects: 7.035500 ms  DeleteObjects: 0.781700 ms)
+Memory consumption went from 324.8 MB to 322.2 MB.
+Total: 8.495200 ms (FindLiveObjects: 0.493700 ms CreateObjectMapping: 0.660600 ms MarkObjects: 6.580200 ms  DeleteObjects: 0.758600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-08-21T19:51:33.5040846Z
-  Time since last request: 846750.98203950002789 seconds.
-  importAddress: GUID: e898f64f4bb313b4093714a7f5141831 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: e898f64f4bb313b4093714a7f5141831 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: e898f64f4bb313b4093714a7f5141831' -> (Import Result ID: '11c5318e15b57021a6c91fe1cb56aa97') in 0.211 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7fb14180c59f11dfc55bb5d78373c691 DependenciesID=21b17bf8fdb76c7de86de60f518cdeb4 StaticDependenciesID=50fec0d1cb0e33e4a7b2b56c81d556a5 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:33.764471Z
-  Time since last request: 0.026924 seconds.
-  importAddress: GUID: 93ef5b4daf54ac14f81e0772961bf7b1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_16.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 93ef5b4daf54ac14f81e0772961bf7b1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_16.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 93ef5b4daf54ac14f81e0772961bf7b1' -> (Import Result ID: '3f80ee3b069f77a8e1654418ae63c279') in 0.021 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=306ac4c2eca6ed2e6a5a8b4d7277f8de DependenciesID=3fca9afeb162864722865ea801c206ac StaticDependenciesID=5907f4b2e4aa687efd2a8cb804900bb5 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:33.8123991Z
-  Time since last request: 0.0003186 seconds.
-  importAddress: GUID: 524443b7797344d49a3a83c3cf3e0a60 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_10.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 524443b7797344d49a3a83c3cf3e0a60 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_10.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 524443b7797344d49a3a83c3cf3e0a60' -> (Import Result ID: 'ed3ead94c5f36d9977535f7beeef7421') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=265df32be068c07fcad7c4dd1e089465 DependenciesID=613f4483d2e9ce803bdc2bbba22ec0ac StaticDependenciesID=1f0a5b5e87953a0f57e2d5a688103961 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:33.8470603Z
-  Time since last request: 0.0003746 seconds.
-  importAddress: GUID: d15ac5b27badac44e9535c7f31e5922e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: d15ac5b27badac44e9535c7f31e5922e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: d15ac5b27badac44e9535c7f31e5922e' -> (Import Result ID: '4d42fe4bfe8e0a23f57718ad540d73d5') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=27f072550c6a591fa2f5667d41b759ec DependenciesID=97699088a435dce3ebc16e45f5e74800 StaticDependenciesID=55bd8c832d6e20ea809b4a16a38346c9 
+  Time of request: 2026-08-22T02:13:28.2071348Z
+  Time since last request: 869668.8907171000028 seconds.
+  importAddress: GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/EscenarioInicial.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/EscenarioInicial.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 70bb87f4f30b2dc47ba571c163315f6b' -> (Import Result ID: '8394128f8e9f4440dad4e82c4bf34110') in 0.135 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8d3ddafb916fefce49ebe22d36cb0542 DependenciesID=703e667e54cc56de199cfcfd63efc338 StaticDependenciesID=268cd2fca0af6d1b6417396805893331 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:33.8804744Z
-  Time since last request: 0.0007776 seconds.
-  importAddress: GUID: e1f3eb9b7c62ede409fa1a4d6770ef88 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_3.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: e1f3eb9b7c62ede409fa1a4d6770ef88 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_3.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: e1f3eb9b7c62ede409fa1a4d6770ef88' -> (Import Result ID: 'd7437285101755b9c4d863ed07b9ea3c') in 0.021 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9c439de494711c93fd0a56127db92d95 DependenciesID=755349badeb7fce1405821885abdab58 StaticDependenciesID=475d7eb7cc794a578b04aaf78ee7d7b0 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 2.49 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.108 seconds
+Domain Reload Profiling: 2295ms
+	BeginReloadAssembly (346ms)
+		DisableScriptedObjects (20ms)
+		CreateAndSetChildDomain (83ms)
+	RebuildCommonClasses (11ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (119ms)
+	LoadAllAssembliesAndSetupDomain (687ms)
+		LoadAssemblies (643ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (11ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1109ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (353ms)
+			ProcessInitializeOnLoadMethodAttributes (172ms)
+			AfterProcessingInitializeOnLoad (11ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Refreshing native plugins compatible for Editor in 2.80 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (5.9 MB). Loaded Objects now: 7636.
+Memory consumption went from 334.4 MB to 328.5 MB.
+Total: 15.278900 ms (FindLiveObjects: 0.994700 ms CreateObjectMapping: 2.827100 ms MarkObjects: 7.361700 ms  DeleteObjects: 4.092400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 2.58 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.047 seconds
+Domain Reload Profiling: 2187ms
+	BeginReloadAssembly (351ms)
+		DisableScriptedObjects (18ms)
+		CreateAndSetChildDomain (80ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (100ms)
+	LoadAllAssembliesAndSetupDomain (648ms)
+		LoadAssemblies (606ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (13ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1048ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (366ms)
+			ProcessInitializeOnLoadMethodAttributes (189ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (43ms)
+Refreshing native plugins compatible for Editor in 5.25 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (6.1 MB). Loaded Objects now: 7639.
+Memory consumption went from 336.6 MB to 330.5 MB.
+Total: 17.001900 ms (FindLiveObjects: 1.444300 ms CreateObjectMapping: 3.954100 ms MarkObjects: 7.129500 ms  DeleteObjects: 4.471500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 2.90 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.062 seconds
+Domain Reload Profiling: 2216ms
+	BeginReloadAssembly (372ms)
+		DisableScriptedObjects (24ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (114ms)
+	LoadAllAssembliesAndSetupDomain (628ms)
+		LoadAssemblies (602ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (10ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1064ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (122ms)
+			ProcessInitializeOnLoadAttributes (350ms)
+			ProcessInitializeOnLoadMethodAttributes (216ms)
+			AfterProcessingInitializeOnLoad (16ms)
+		AwakeInstancesAfterBackupRestoration (35ms)
+Refreshing native plugins compatible for Editor in 3.55 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (6.0 MB). Loaded Objects now: 7642.
+Memory consumption went from 338.8 MB to 332.9 MB.
+Total: 18.063400 ms (FindLiveObjects: 1.166100 ms CreateObjectMapping: 3.032600 ms MarkObjects: 8.157000 ms  DeleteObjects: 5.703300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-08-21T19:51:33.9227297Z
-  Time since last request: 0.0004124 seconds.
-  importAddress: GUID: 1e9f84486bb4bf74fa49fc80ba3c345c - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-5.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 1e9f84486bb4bf74fa49fc80ba3c345c - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-5.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 1e9f84486bb4bf74fa49fc80ba3c345c' -> (Import Result ID: 'e10ee79a360fe14e5edb4a935c9147e8') in 0.065 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fd8d34f3fec42292e4d500219a3da858 DependenciesID=e6c1bee04349d863105ccb85abd7b3a6 StaticDependenciesID=c0d847c4fd62e4330bad5a7c2660c8a5 
+  Time of request: 2026-08-22T02:39:03.9189568Z
+  Time since last request: 1535.56067510000003 seconds.
+  importAddress: GUID: be76e5f14cfee674cb30b491fb72b09b - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts/SimpleCameraController.cs - Importer: PreviewImporter
+Importing 'GUID: be76e5f14cfee674cb30b491fb72b09b - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts/SimpleCameraController.cs - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: be76e5f14cfee674cb30b491fb72b09b' -> (Import Result ID: '7857299535fa0f9d8871376020b735e9') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=07cde9ce32a49eb9800ee5c7d4cab397 DependenciesID=f8a9504cfb21233fae5ae34326f1b387 StaticDependenciesID=f69df16e2cd5d27c3274f43b1a29683d 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 3.58 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.023 seconds
+Domain Reload Profiling: 2148ms
+	BeginReloadAssembly (345ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (638ms)
+		LoadAssemblies (615ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (10ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1025ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (348ms)
+			ProcessInitializeOnLoadMethodAttributes (188ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (37ms)
+Refreshing native plugins compatible for Editor in 3.74 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (6.4 MB). Loaded Objects now: 7645.
+Memory consumption went from 338.9 MB to 332.5 MB.
+Total: 16.294200 ms (FindLiveObjects: 1.134700 ms CreateObjectMapping: 2.924500 ms MarkObjects: 6.708400 ms  DeleteObjects: 5.523800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Refreshing native plugins compatible for Editor in 3.34 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.6 MB). Loaded Objects now: 7645.
+Memory consumption went from 336.4 MB to 333.7 MB.
+Total: 9.321100 ms (FindLiveObjects: 0.663500 ms CreateObjectMapping: 1.275500 ms MarkObjects: 6.575600 ms  DeleteObjects: 0.803800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-08-21T19:51:34.0056551Z
-  Time since last request: 0.0009307 seconds.
-  importAddress: GUID: 66c119e7045751a4b925a4c0a1233bec - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/TimeLine/TimeLine.playable - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 66c119e7045751a4b925a4c0a1233bec - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/TimeLine/TimeLine.playable - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 66c119e7045751a4b925a4c0a1233bec' -> (Import Result ID: 'f28b16a4d2f817a17e5dd95867e96805') in 0.111 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b5e179e295df28fee3ab639d6cc764f0 DependenciesID=068133729b9fc92ccfca2c12898b726a StaticDependenciesID=aa73929a3d922f5aeccc659cb6229552 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.1349431Z
-  Time since last request: 0.0007148 seconds.
-  importAddress: GUID: 30837d99204c267469790c935fcc77af - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-2.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 30837d99204c267469790c935fcc77af - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-2.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 30837d99204c267469790c935fcc77af' -> (Import Result ID: 'b907cffd7b359f50f30158ff10b2693e') in 0.071 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5f12fc640bfe69e7edb2d9cfc07b87bb DependenciesID=77f59273f220bb661efa8a31bd11a026 StaticDependenciesID=2431ac2088cb8a9bfabcc474ef9df3fe 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.2243214Z
-  Time since last request: 0.0007168 seconds.
-  importAddress: GUID: a981f91f7749c814bae01f18e53d2a5f - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-9.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: a981f91f7749c814bae01f18e53d2a5f - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-9.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: a981f91f7749c814bae01f18e53d2a5f' -> (Import Result ID: 'ffc992529a4c222316a351b37249de5e') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0faff447bc269a842be53eb25009456d DependenciesID=eb16c58872ff36f928e3d38140e704b4 StaticDependenciesID=32f50d230fac0e220d11282cce3a3292 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.2497941Z
-  Time since last request: 0.0005818 seconds.
-  importAddress: GUID: 0049abd2a4dddff4eb9cedc78b951818 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_Standard.unitypackage - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 0049abd2a4dddff4eb9cedc78b951818 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_Standard.unitypackage - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 0049abd2a4dddff4eb9cedc78b951818' -> (Import Result ID: '46ea3f090e2bb2fa51a685611d3c3610') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f0975be9c055082f0dd3ce4c6692d19d DependenciesID=932d0fe8cbb9541351aa5a03770f991e StaticDependenciesID=e3165c983c9119321a5874578ab54809 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.274442Z
-  Time since last request: 0.0016699 seconds.
-  importAddress: GUID: 5a7e3987da126b3448d7e55a9ec0fe97 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 5a7e3987da126b3448d7e55a9ec0fe97 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 5a7e3987da126b3448d7e55a9ec0fe97' -> (Import Result ID: '7a21f5fa09b0c9d8bd03b073d1230562') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bc990e540941022326578c48e9e4f019 DependenciesID=840735024dd8292ec9bde2510697be70 StaticDependenciesID=dafb1024cac8a405029a11ce622f2b83 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.3066601Z
-  Time since last request: 0.0009207 seconds.
-  importAddress: GUID: 4bca999ab1da9294ea5d575e41073b88 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-4.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 4bca999ab1da9294ea5d575e41073b88 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-4.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 4bca999ab1da9294ea5d575e41073b88' -> (Import Result ID: '1ede5b27d5cf22bdf06f73ad792d58e8') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fcacb59fd75e49ca524455d311bf1bc6 DependenciesID=8e88f7ca6245a33f5c42821d7f1e0b05 StaticDependenciesID=781459fd6a38ae84a6ca4ea37f173d72 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.3380163Z
-  Time since last request: 0.000776 seconds.
-  importAddress: GUID: 0c1f7fd3b4f294643bfff7973f272be4 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 0c1f7fd3b4f294643bfff7973f272be4 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 0c1f7fd3b4f294643bfff7973f272be4' -> (Import Result ID: 'c32b5960febfce8a56a8174db6c41b79') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5a143b4577bb412ede033333607b3ec7 DependenciesID=1cfcec56450dca6f2b2b1ee179fdf8f1 StaticDependenciesID=c76633d949d3ab7ccc69a52c7e64a5b0 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.3731159Z
-  Time since last request: 0.0007211 seconds.
-  importAddress: GUID: 951feb579e3b39140b4fe8b330bf1c32 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_A.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 951feb579e3b39140b4fe8b330bf1c32 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_A.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 951feb579e3b39140b4fe8b330bf1c32' -> (Import Result ID: '0bb58b068555e3c6b4fdba8a20fd9c26') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=92eba19893383ed135ae681cd847d5b5 DependenciesID=e64d41a89fa8b9de839a7e73fbe83adb StaticDependenciesID=c2382c9fe778d73d90e43602b86ca1d2 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.4081836Z
-  Time since last request: 0.0003928 seconds.
-  importAddress: GUID: fab313412e0d2c74789fda3ec4afed43 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: fab313412e0d2c74789fda3ec4afed43 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: fab313412e0d2c74789fda3ec4afed43' -> (Import Result ID: '6f23244679408b55c2533e0e400a98e6') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=772301d2a5103eccf847cfb7778e645e DependenciesID=01fdd21ced998d2b622d95e9ac7c0379 StaticDependenciesID=6a187bb22667565f9b97450bc9a1fd6a 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.439058Z
-  Time since last request: 0.0007013 seconds.
-  importAddress: GUID: d742b67c3d5e5f44ebe4f2553652d5cf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: d742b67c3d5e5f44ebe4f2553652d5cf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: d742b67c3d5e5f44ebe4f2553652d5cf' -> (Import Result ID: '0e347d86a037e4f05f14378cc21ee49c') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b488dd3369a207528b69107db25f8e22 DependenciesID=8059078ad7e095ef42b150e6b5d798d2 StaticDependenciesID=770d7b60c6e89fee4088cabae0ae270a 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.4698073Z
-  Time since last request: 0.001014 seconds.
-  importAddress: GUID: 231a39003d7900a449195034b9bcae99 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/TimeLine - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 231a39003d7900a449195034b9bcae99 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/TimeLine - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 231a39003d7900a449195034b9bcae99' -> (Import Result ID: 'fb0621d505d71d517090820f0c80dce4') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2944062c3edde80dde166003960ade47 DependenciesID=29dd6b2c66070ce28ed70dc6f5bcfb2a StaticDependenciesID=102b1d1cb1542abca6cb3bc19a5f7a2d 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.501304Z
-  Time since last request: 0.0009284 seconds.
-  importAddress: GUID: d0bb46de673bcf745bbeb786cdd68677 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: d0bb46de673bcf745bbeb786cdd68677 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: d0bb46de673bcf745bbeb786cdd68677' -> (Import Result ID: '495f104d63249ce6c9bc72c42a239b59') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=37e748398bf3f1baf4c4c7914e8d2eb5 DependenciesID=611a5445ae1c2cb691a4d2992679c04c StaticDependenciesID=bcdca9b891774e9e7276bc434c6d8a52 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.530254Z
-  Time since last request: 0.0007857 seconds.
-  importAddress: GUID: 0598a034c1b3d474e97ba38920f3ecc6 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_12.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 0598a034c1b3d474e97ba38920f3ecc6 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_12.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 0598a034c1b3d474e97ba38920f3ecc6' -> (Import Result ID: '9f6145fa41cedad70cc6948e87f04105') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2a4f33a33b27c3187e09e232a0b67d27 DependenciesID=82e79d6d9a06f6617920fbc7d949c0ea StaticDependenciesID=04df82b3c6e255378a478c1ba5ba3c6a 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.5648959Z
-  Time since last request: 0.0002213 seconds.
-  importAddress: GUID: 0b045f30bfc32464780c25865b113dfd - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/SkyColor.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 0b045f30bfc32464780c25865b113dfd - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/SkyColor.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 0b045f30bfc32464780c25865b113dfd' -> (Import Result ID: '05b1f8fba54beb5e74df477d09885551') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2a483bfd0a36857fa21059609f511bc1 DependenciesID=b7ed5615c0fd15255bce4bcc41a934f6 StaticDependenciesID=e334901f2d09f439a79431640b41f672 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.6006678Z
-  Time since last request: 0.001013 seconds.
-  importAddress: GUID: efbe4c2311392ab44bbbcb00005f5693 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_B1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: efbe4c2311392ab44bbbcb00005f5693 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_B1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: efbe4c2311392ab44bbbcb00005f5693' -> (Import Result ID: '326b031018a1f97821d1aea284f74cc6') in 0.021 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=88a068bb1bab6236efa7088cebd32dcd DependenciesID=3eea650f5439cdce8b2c8c00fe6adcc1 StaticDependenciesID=aedc34b6884aebcb9793a1cc16936c31 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.6468823Z
-  Time since last request: 0.0001662 seconds.
-  importAddress: GUID: be76e5f14cfee674cb30b491fb72b09b - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts/SimpleCameraController.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: be76e5f14cfee674cb30b491fb72b09b - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts/SimpleCameraController.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: be76e5f14cfee674cb30b491fb72b09b' -> (Import Result ID: 'ec553f16b205bb227289aeea0bc0d0e5') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=182ce32c657adcfe373489576944f2bb DependenciesID=dfc632126ddb7df57653cf51c072db74 StaticDependenciesID=bcd126a1526a22cced96dd810eea8a92 
+  Time of request: 2026-08-22T02:44:30.9071647Z
+  Time since last request: 326.970911 seconds.
+  importAddress: GUID: c5f4a9658803981469ebe90da3bd7fbf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.unity - Importer: PreviewImporter
+Importing 'GUID: c5f4a9658803981469ebe90da3bd7fbf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.unity - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: c5f4a9658803981469ebe90da3bd7fbf' -> (Import Result ID: 'ebed9a1c9c8820e0a4fecfb139d81026') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0c9cba480089a82cc0397d78d89f9c43 DependenciesID=5428bdb1054d15051fedf7b0cef2da0a StaticDependenciesID=74a7b44377c61e58074c40a849f3f9b4 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-08-21T19:51:34.6728842Z
-  Time since last request: 0.0007582 seconds.
-  importAddress: GUID: 380287f50b6d85c44a78fc73bcd3bbce - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_9.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 380287f50b6d85c44a78fc73bcd3bbce - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_9.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 380287f50b6d85c44a78fc73bcd3bbce' -> (Import Result ID: 'c9a15059e0a836fb877714a2283589bf') in 0.025 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9f5a9cf54429efa3ef4adea9ffb8e048 DependenciesID=dc0a5d736cb983df301c526c161e5581 StaticDependenciesID=9e38285195f5258c5b78167b471b4c59 
+  Time of request: 2026-08-22T02:46:33.1155731Z
+  Time since last request: 122.1889316 seconds.
+  importAddress: GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/EscenarioInicial.unity - Importer: PreviewImporter
+Importing 'GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/EscenarioInicial.unity - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 70bb87f4f30b2dc47ba571c163315f6b' -> (Import Result ID: 'f7b2b4c118a2ef48d1ebafa83f8b16b7') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=57dfdc011e63989d0cd4dedae2009511 DependenciesID=2e05721d6b390a3c9fd5abba3de8c67f StaticDependenciesID=3374ec5fd2cd6db17d1932091b6f9dfb 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Refreshing native plugins compatible for Editor in 3.47 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.6 MB). Loaded Objects now: 7645.
+Memory consumption went from 327.7 MB to 325.1 MB.
+Total: 8.428300 ms (FindLiveObjects: 0.572900 ms CreateObjectMapping: 0.784400 ms MarkObjects: 6.315600 ms  DeleteObjects: 0.753400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 3.33 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.011 seconds
+Domain Reload Profiling: 2124ms
+	BeginReloadAssembly (342ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (81ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (108ms)
+	LoadAllAssembliesAndSetupDomain (623ms)
+		LoadAssemblies (574ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (12ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1012ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (124ms)
+			ProcessInitializeOnLoadAttributes (340ms)
+			ProcessInitializeOnLoadMethodAttributes (180ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (38ms)
+Refreshing native plugins compatible for Editor in 4.39 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (6.2 MB). Loaded Objects now: 7648.
+Memory consumption went from 334.7 MB to 328.5 MB.
+Total: 16.403000 ms (FindLiveObjects: 1.213800 ms CreateObjectMapping: 3.286400 ms MarkObjects: 7.362100 ms  DeleteObjects: 4.537500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Refreshing native plugins compatible for Editor in 3.30 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.6 MB). Loaded Objects now: 7648.
+Memory consumption went from 332.1 MB to 329.5 MB.
+Total: 9.426400 ms (FindLiveObjects: 0.619500 ms CreateObjectMapping: 0.745600 ms MarkObjects: 6.980500 ms  DeleteObjects: 1.077200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-08-21T19:51:34.7151943Z
-  Time since last request: 0.0004724 seconds.
-  importAddress: GUID: 5037bd3ff9093da4f81bb8f690104168 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-3.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 5037bd3ff9093da4f81bb8f690104168 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-3.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 5037bd3ff9093da4f81bb8f690104168' -> (Import Result ID: 'd9ea0078097af2fb34610449cf2a7f9f') in 0.019 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ebbb74f2a215a310ae0d32c2cb1ff218 DependenciesID=16d87459f94ac2f663a6485a066e2cbf StaticDependenciesID=fa22aa022bef5c8fc42970a367148d41 
+  Time of request: 2026-08-22T02:49:50.8021959Z
+  Time since last request: 197.66878550000001 seconds.
+  importAddress: GUID: 76e135fe86853554fa74a89431738d53 - Path: Assets/Escenario - Importer: PreviewImporter
+Importing 'GUID: 76e135fe86853554fa74a89431738d53 - Path: Assets/Escenario - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 76e135fe86853554fa74a89431738d53' -> (Import Result ID: 'fb1a3afc245f2e178e3654be3b093504') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e6b3109779620ce10256104437de093d DependenciesID=cc1ad1caa096ab7c9b5fd1b9c16bc812 StaticDependenciesID=2ba8473bd79a318216a10a8d49419e87 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-08-21T19:51:34.7560585Z
-  Time since last request: 0.0012817 seconds.
-  importAddress: GUID: 6489ddf5157f65840adb429c54b450ff - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 6489ddf5157f65840adb429c54b450ff - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 6489ddf5157f65840adb429c54b450ff' -> (Import Result ID: 'b8c807e249482a30290f5e2be78460c0') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1b382cda84709b15835a7e31f7bc79d9 DependenciesID=4cd4cb671ca9dc7a96970b548778a4cf StaticDependenciesID=bb361c13a6e1db9560c36a234d7a0b09 
+  Time of request: 2026-08-22T02:49:51.3016441Z
+  Time since last request: 0.4807631 seconds.
+  importAddress: GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/Escenario/EscenarioInicial.unity - Importer: PreviewImporter
+Importing 'GUID: 70bb87f4f30b2dc47ba571c163315f6b - Path: Assets/Escenario/EscenarioInicial.unity - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 70bb87f4f30b2dc47ba571c163315f6b' -> (Import Result ID: 'eb6db6e0652c1467673856aa4c27d6e0') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=57dfdc011e63989d0cd4dedae2009511 DependenciesID=74392fd28b7795ca95e7825655043286 StaticDependenciesID=6afffb7e85e66a51b55e4c45e627e10a 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-08-21T19:51:34.7928208Z
-  Time since last request: 0.0007513 seconds.
-  importAddress: GUID: 4de7a2a67eaf3294aba3f667e530de8f - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_C2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 4de7a2a67eaf3294aba3f667e530de8f - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_C2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 4de7a2a67eaf3294aba3f667e530de8f' -> (Import Result ID: '25345c3ab9c8f22c59edbd28a579376b') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b826efd363c34116ce7e3abf2215c648 DependenciesID=41a5e0ae60937fee4c73b9022c264a85 StaticDependenciesID=8a121cb00ae793932db42814d605b878 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.8278322Z
-  Time since last request: 0.0002982 seconds.
-  importAddress: GUID: 49b91a815dee8974d9439e1311858a09 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-8.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 49b91a815dee8974d9439e1311858a09 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-8.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 49b91a815dee8974d9439e1311858a09' -> (Import Result ID: 'bb7cd7740a8978e69208707ca5c6331a') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=29ddec9f8c97035550a13d4b2d08b026 DependenciesID=41a29355a94a36bf8bb26d6252d16a6a StaticDependenciesID=09f750a3c1921a06b63e5be2172c0d63 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.8556711Z
-  Time since last request: 0.0006496 seconds.
-  importAddress: GUID: 3e286d3a961ac6d4bb715589537a3dc1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 3e286d3a961ac6d4bb715589537a3dc1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 3e286d3a961ac6d4bb715589537a3dc1' -> (Import Result ID: 'f99a32471e8d3c361385071a63a34c11') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e81aef708e17c94de42b8a3bb204a270 DependenciesID=311f28cb4190bb01e5c6fbf46288c570 StaticDependenciesID=1c947f7389311f46bdc8c766d49b7d8c 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.8862908Z
-  Time since last request: 0.0007989 seconds.
-  importAddress: GUID: 44ab6ebe5d86158409e685d3110a8c71 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/DemoScene - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 44ab6ebe5d86158409e685d3110a8c71 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/DemoScene - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 44ab6ebe5d86158409e685d3110a8c71' -> (Import Result ID: 'd9d4155b5e961949ad8380a5da9a57db') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c90878207c8432f9e63d67d4856a53c1 DependenciesID=507130943046f844375b49af2cc2d608 StaticDependenciesID=bd9fc5366360b53c09acc294848bfc7b 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.9173784Z
-  Time since last request: 0.0009903 seconds.
-  importAddress: GUID: 8b1f7c9e230f99f46a4e2c246a99f84e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-7.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 8b1f7c9e230f99f46a4e2c246a99f84e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-7.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 8b1f7c9e230f99f46a4e2c246a99f84e' -> (Import Result ID: 'a693a5571b743301447bc6eeb5dfbece') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=95096ed753d1a1dbd207e2254cbae70f DependenciesID=903b45e848fc568f920f0e66a1af6e8c StaticDependenciesID=4ee699b6bf6d5e9aecb175989087609c 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.9575604Z
-  Time since last request: 0.0005813 seconds.
-  importAddress: GUID: cb87884a8ae01b54cb01f106d1483267 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: cb87884a8ae01b54cb01f106d1483267 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: cb87884a8ae01b54cb01f106d1483267' -> (Import Result ID: '1f0196cb065af32d3e7ac8bede36c070') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8ab837cf64a6c6aa3cf048315155acba DependenciesID=03d924cc0672c7c66507b5bab6a7e1a3 StaticDependenciesID=cc2961e2a8ab7e51da73b6b1d0f0bac4 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:34.9915583Z
-  Time since last request: 0.0005882 seconds.
-  importAddress: GUID: f45a00a6d60a4544d859023c36429b66 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-6.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: f45a00a6d60a4544d859023c36429b66 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-6.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: f45a00a6d60a4544d859023c36429b66' -> (Import Result ID: '84042c2aeca464b67a7eeeecfad26eac') in 0.020 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=488aa0055b33fc4b6d09f0802cba7849 DependenciesID=541c57c9e8199b15d5f4bd5146da5fb2 StaticDependenciesID=5c1d69467efdeb91fc2cd97a3357ae4f 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.0311513Z
-  Time since last request: 0.0010515 seconds.
-  importAddress: GUID: 02a3527b6b33a924e8ec66aa805ea717 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 02a3527b6b33a924e8ec66aa805ea717 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scripts - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 02a3527b6b33a924e8ec66aa805ea717' -> (Import Result ID: 'ba8ff99c266b5e85a5c88a72760dcfc9') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b42ccec4c8d7837da1cd92a6dac7846a DependenciesID=b97d0bb5ce69c31d53e1a071229de8b2 StaticDependenciesID=539260310209abccb5c1289bbf3bb121 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.0556445Z
-  Time since last request: 0.0007998 seconds.
-  importAddress: GUID: d2be97095b8b6714481f3b961928dd87 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_14.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: d2be97095b8b6714481f3b961928dd87 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_14.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: d2be97095b8b6714481f3b961928dd87' -> (Import Result ID: '2f3a40a69058b1ed1c98bdf1f591fdaa') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9f46838dcdea540210de8c9dc172db7e DependenciesID=b565305486161bada8f06c2c35066006 StaticDependenciesID=9b15fd77d46604921f9ca612ca0cf774 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.0901006Z
-  Time since last request: 0.0003021 seconds.
-  importAddress: GUID: 34b0f56bfe7f4f249a90646158c51028 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 34b0f56bfe7f4f249a90646158c51028 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Grass-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 34b0f56bfe7f4f249a90646158c51028' -> (Import Result ID: '814580eb2b4d47b01103f78cef11e5f9') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f5bd693a428a563f8f0071807a3f1ff2 DependenciesID=cd695374be63fcab63fa8687cb7af3fb StaticDependenciesID=ca3b1949df70b6a4cdafcd3194bb3f3f 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.1191873Z
-  Time since last request: 0.0007245 seconds.
-  importAddress: GUID: f3e32ecb9bd57bc40ba45c6c55989484 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_D2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: f3e32ecb9bd57bc40ba45c6c55989484 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_D2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: f3e32ecb9bd57bc40ba45c6c55989484' -> (Import Result ID: '5ae3b8ab2c24cc4fdcd63be511b8e84f') in 0.019 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f88260986a41339e8fa854c9074618d DependenciesID=1a0c57c5ce7e7851565d1eb31edffdb2 StaticDependenciesID=5504a8f8bae53911d55eb289b346d75d 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.1574945Z
-  Time since last request: 0.0000583 seconds.
-  importAddress: GUID: fdeb14b6b1d857a4e97752d1f07b49b7 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ocean.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: fdeb14b6b1d857a4e97752d1f07b49b7 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ocean.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: fdeb14b6b1d857a4e97752d1f07b49b7' -> (Import Result ID: '5baf03d70a0d18f85c6df9a8b09187d2') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1a4bf4563269ccbcfe249e1895a78216 DependenciesID=91ac01b233452afde7321636f2a19361 StaticDependenciesID=96edcb0288ab122cf13acd9f705d1070 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.1928867Z
-  Time since last request: 0.0006678 seconds.
-  importAddress: GUID: b0035cc3b5e6130448e28efdaf06b319 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: b0035cc3b5e6130448e28efdaf06b319 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: b0035cc3b5e6130448e28efdaf06b319' -> (Import Result ID: '3c4cfaf630409ca4547fc362e79abb57') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3ff86fc2e9fec7a684061660ac1bdc6b DependenciesID=c3a19ea14ac2218887f3d89765236b6f StaticDependenciesID=7ae0b5c1b5878f02ebb9765e077e0fc6 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.2284465Z
-  Time since last request: 0.0001339 seconds.
-  importAddress: GUID: 5545c155a6153ed4098064cd72797dc6 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-5.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 5545c155a6153ed4098064cd72797dc6 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-5.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 5545c155a6153ed4098064cd72797dc6' -> (Import Result ID: '565fc3152e86477583341e19c1a230c7') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=18bda21c251c7e26d580cb8f7224562d DependenciesID=e3966bb06335e3af9fae96f6973c9fe1 StaticDependenciesID=96fa174a1e07efc7e65fbd3a8e29016a 
+  Time of request: 2026-08-22T02:54:17.5737654Z
+  Time since last request: 266.2523966 seconds.
+  importAddress: GUID: 19ba41d7c0026c3459d37c2fe90c55a0 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-HighQuality.asset - Importer: PreviewImporter
+Importing 'GUID: 19ba41d7c0026c3459d37c2fe90c55a0 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-HighQuality.asset - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: 19ba41d7c0026c3459d37c2fe90c55a0' -> (Import Result ID: 'aa1df9faa576ef7d19d21d1dfbd14db2') in 0.028 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=475045ba3c2c8224c429d0a63949aba0 DependenciesID=087c65ed781b2cc0aedac30524265fbd StaticDependenciesID=0fcbdbe243cdc5a55274f429da3404d6 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time of request: 2026-08-21T19:51:35.2575636Z
-  Time since last request: 0.0005729 seconds.
-  importAddress: GUID: bd95c52d6828fdf42b8081bed36bc037 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: bd95c52d6828fdf42b8081bed36bc037 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: bd95c52d6828fdf42b8081bed36bc037' -> (Import Result ID: '1b069704a3bcf5962f7c08b86778731c') in 0.021 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=32962b0c225c6056155c4596265aad45 DependenciesID=b6a261974d0b23411ec697bc61c3d176 StaticDependenciesID=a9876c47c30d69ddbd79effe44806400 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.295259Z
-  Time since last request: 0.0002936 seconds.
-  importAddress: GUID: 900020bfbf6587d4585d9a2820e456f2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 900020bfbf6587d4585d9a2820e456f2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 900020bfbf6587d4585d9a2820e456f2' -> (Import Result ID: 'ec13e0838d1496aaf58aee88801d642a') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5d5734dff923ac44750b63315b99abed DependenciesID=ae043401beca5b706260ce707cf3da6c StaticDependenciesID=d282c375a0cdba9cd34a22e62affaabb 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.32569Z
-  Time since last request: 0.0004717 seconds.
-  importAddress: GUID: 32812f864ffc68f45aa97b19014b7867 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/Environments/Meshes.fbx - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 32812f864ffc68f45aa97b19014b7867 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/Environments/Meshes.fbx - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 32812f864ffc68f45aa97b19014b7867' -> (Import Result ID: '7529fb849d2a688581969d04f0526b82') in 0.113 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c5a43ad5685312dd79471ef60768d3c0 DependenciesID=e644d18d7512d987331075fd6ce6dfe1 StaticDependenciesID=cc47b362c5f9f23a5adaa8fcdd22242e 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 239
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.4604371Z
-  Time since last request: 0.000048 seconds.
-  importAddress: GUID: 5999630819df39b40b9327d242d1b87e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 5999630819df39b40b9327d242d1b87e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 5999630819df39b40b9327d242d1b87e' -> (Import Result ID: 'f3b142cfa6e89d5384e9dafaae03b5f6') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=97c13eeeba641596c91a812982995a17 DependenciesID=80845adf77b7f7e37f4bcbefd0a70d81 StaticDependenciesID=9b895503bc800d4703665af393567fa1 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.4835732Z
-  Time since last request: 0.0006017 seconds.
-  importAddress: GUID: de3df4a73a200dd4aab4b967d8702018 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_7.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: de3df4a73a200dd4aab4b967d8702018 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_7.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: de3df4a73a200dd4aab4b967d8702018' -> (Import Result ID: '1c1f03935dfa2f64e939e29c7e863b7d') in 0.019 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b804276c497020e2a0e21d2d31cb408c DependenciesID=30689aca7ea5646746654a8a8f77b32a StaticDependenciesID=9b54fab28207fa1aca5523aa6f219efe 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.5209884Z
-  Time since last request: 0.0003689 seconds.
-  importAddress: GUID: 5406a61fe100b3c439cfe3758f1fc27a - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/Environments - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 5406a61fe100b3c439cfe3758f1fc27a - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Meshes/Environments - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 5406a61fe100b3c439cfe3758f1fc27a' -> (Import Result ID: 'b23a56c3d9c8e51f87da8743b2246434') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e0c118525cab59be94261e3cb0ff3b87 DependenciesID=b5dbf64f3aed1cd6720ee3310c5f6f49 StaticDependenciesID=c70229934ae36255d9da322c7a67c725 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.5448011Z
-  Time since last request: 0.0008057 seconds.
-  importAddress: GUID: 0735c275001a2c84dafdb30deced5d8d - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 0735c275001a2c84dafdb30deced5d8d - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 0735c275001a2c84dafdb30deced5d8d' -> (Import Result ID: 'f8bf97448c0d38cb52740c0034796a74') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d2904096e1f106b6d03b9884d9bcd65e DependenciesID=99525425d2ea0a41b9147ea49e6de0ab StaticDependenciesID=03c47249ba09f803274edac3157c22a2 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.5692513Z
-  Time since last request: 0.0007927 seconds.
-  importAddress: GUID: b0005086df78d8745981ed1d06db52a5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: b0005086df78d8745981ed1d06db52a5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-4.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: b0005086df78d8745981ed1d06db52a5' -> (Import Result ID: '3d590f948960b39bfa4b51b9d3908f38') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=62e2d623614e13cefc601095d9ad229a DependenciesID=502304ca4208a1f72c3bb2d42e1097f2 StaticDependenciesID=989d7a7405d2ca6bf3a18511bf8c7a9c 
+  Time of request: 2026-08-22T02:54:17.6142644Z
+  Time since last request: 0.0004483 seconds.
+  importAddress: GUID: d847b876476d3d6468f5dfcd34266f96 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-MediumQuality.asset - Importer: PreviewImporter
+Importing 'GUID: d847b876476d3d6468f5dfcd34266f96 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-MediumQuality.asset - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: d847b876476d3d6468f5dfcd34266f96' -> (Import Result ID: '2dea30c6f687e00569ab41c86b94336e') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5be0c649baa11049ae8db4094c8af354 DependenciesID=1b051897308e3126831cfb74c08e89c7 StaticDependenciesID=0172f749756d7a407958505ee5ab173b 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.5977203Z
-  Time since last request: 0.0006136 seconds.
-  importAddress: GUID: f9028a1015685ce4795e21831f327fb9 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_H.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: f9028a1015685ce4795e21831f327fb9 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_H.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: f9028a1015685ce4795e21831f327fb9' -> (Import Result ID: '7a7d92066a1cd0af1c9f1e15f795d429') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7a3291c44cc6187fb8725662d7ef71c9 DependenciesID=ea323ea107f65654b39a5be625305210 StaticDependenciesID=230f2e05e3a8cb17c9b4dedfa8d65422 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 2.89 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.029 seconds
+Domain Reload Profiling: 2121ms
+	BeginReloadAssembly (344ms)
+		DisableScriptedObjects (15ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (106ms)
+	LoadAllAssembliesAndSetupDomain (604ms)
+		LoadAssemblies (581ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (10ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1031ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (353ms)
+			ProcessInitializeOnLoadMethodAttributes (182ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (39ms)
+Refreshing native plugins compatible for Editor in 3.61 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (6.1 MB). Loaded Objects now: 7652.
+Memory consumption went from 332.6 MB to 326.5 MB.
+Total: 17.348600 ms (FindLiveObjects: 1.463800 ms CreateObjectMapping: 3.060400 ms MarkObjects: 7.297600 ms  DeleteObjects: 5.523200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.6282672Z
-  Time since last request: 0.0002244 seconds.
-  importAddress: GUID: 04a77e7e43a79ed478e212e4f5ede12d - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_4.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 04a77e7e43a79ed478e212e4f5ede12d - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_4.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 04a77e7e43a79ed478e212e4f5ede12d' -> (Import Result ID: 'cbe5f77fd7dfb509bd2cce464bd8c6a3') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ecb42e061633e4e2790852262138715e DependenciesID=330d79a81424504be886ba1c11cb5ff2 StaticDependenciesID=8c1e697478aefb794f75a78c185735c3 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 2.98 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.024 seconds
+Domain Reload Profiling: 2109ms
+	BeginReloadAssembly (358ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (106ms)
+	LoadAllAssembliesAndSetupDomain (584ms)
+		LoadAssemblies (568ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (10ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1026ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (374ms)
+			ProcessInitializeOnLoadMethodAttributes (172ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (36ms)
+Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (6.4 MB). Loaded Objects now: 7655.
+Memory consumption went from 334.9 MB to 328.5 MB.
+Total: 17.926200 ms (FindLiveObjects: 1.302000 ms CreateObjectMapping: 3.672900 ms MarkObjects: 7.172400 ms  DeleteObjects: 5.776800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.6604251Z
-  Time since last request: 0.0007906 seconds.
-  importAddress: GUID: e6f02d823d94dd743b3f443f86abfc95 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_13.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: e6f02d823d94dd743b3f443f86abfc95 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_13.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: e6f02d823d94dd743b3f443f86abfc95' -> (Import Result ID: '4a548a28cfae92f4a68e959dca00510d') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a6996d8f6730cdc98ae0e6ca8ea6c66b DependenciesID=22a96a3129873f9077c82416f5f70325 StaticDependenciesID=2754e7fa32bba624356a07e66c533fd9 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 2.83 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.037 seconds
+Domain Reload Profiling: 2157ms
+	BeginReloadAssembly (340ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (74ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (119ms)
+	LoadAllAssembliesAndSetupDomain (620ms)
+		LoadAssemblies (591ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (9ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1038ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (364ms)
+			ProcessInitializeOnLoadMethodAttributes (190ms)
+			AfterProcessingInitializeOnLoad (10ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Refreshing native plugins compatible for Editor in 3.11 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (6.2 MB). Loaded Objects now: 7658.
+Memory consumption went from 337.6 MB to 331.5 MB.
+Total: 16.698900 ms (FindLiveObjects: 1.260300 ms CreateObjectMapping: 3.056700 ms MarkObjects: 7.140600 ms  DeleteObjects: 5.239400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.6964264Z
-  Time since last request: 0.0002753 seconds.
-  importAddress: GUID: 130ece05034e8344992e207b56a66bae - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 130ece05034e8344992e207b56a66bae - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 130ece05034e8344992e207b56a66bae' -> (Import Result ID: 'fdf30cd1996510e229beb8fb8797e94a') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b0f3ad51759185fa53d3fdb6e50aeae0 DependenciesID=9ae5fe3f5a9a41203eb1c0051dc57fb6 StaticDependenciesID=24ed5abc9386115af76a22833421b588 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 3.12 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.040 seconds
+Domain Reload Profiling: 2159ms
+	BeginReloadAssembly (355ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (87ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (108ms)
+	LoadAllAssembliesAndSetupDomain (617ms)
+		LoadAssemblies (589ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (12ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1041ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (348ms)
+			ProcessInitializeOnLoadMethodAttributes (173ms)
+			AfterProcessingInitializeOnLoad (14ms)
+		AwakeInstancesAfterBackupRestoration (39ms)
+Refreshing native plugins compatible for Editor in 3.20 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (5.4 MB). Loaded Objects now: 7661.
+Memory consumption went from 341.3 MB to 335.9 MB.
+Total: 16.143200 ms (FindLiveObjects: 1.338500 ms CreateObjectMapping: 3.268900 ms MarkObjects: 7.273800 ms  DeleteObjects: 4.258800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.7234657Z
-  Time since last request: 0.0005021 seconds.
-  importAddress: GUID: 186a8d9264fb5ee4bb4b0b5a4af78407 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Bridge_B.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 186a8d9264fb5ee4bb4b0b5a4af78407 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Bridge_B.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 186a8d9264fb5ee4bb4b0b5a4af78407' -> (Import Result ID: 'f84559cf06d5853185049cad29711add') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=29d3a77702da8292e85368c964f3f04a DependenciesID=940e518a81d7f855a9245d65a3481ed7 StaticDependenciesID=936198e77294deba1cf1e64c9f017bd0 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Refreshing native plugins compatible for Editor in 3.04 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.049 seconds
+Domain Reload Profiling: 2172ms
+	BeginReloadAssembly (364ms)
+		DisableScriptedObjects (15ms)
+		CreateAndSetChildDomain (89ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (103ms)
+	LoadAllAssembliesAndSetupDomain (618ms)
+		LoadAssemblies (604ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (9ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1051ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (352ms)
+			ProcessInitializeOnLoadMethodAttributes (165ms)
+			AfterProcessingInitializeOnLoad (14ms)
+		AwakeInstancesAfterBackupRestoration (37ms)
+Refreshing native plugins compatible for Editor in 3.25 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6623 unused Assets / (5.5 MB). Loaded Objects now: 7664.
+Memory consumption went from 344.6 MB to 339.1 MB.
+Total: 17.568700 ms (FindLiveObjects: 1.338500 ms CreateObjectMapping: 3.239200 ms MarkObjects: 8.310800 ms  DeleteObjects: 4.638800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.7582015Z
-  Time since last request: 0.0004855 seconds.
-  importAddress: GUID: 0ffaa0b7117ba8c47a9d05ae701d4b4d - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Skybox_Mat.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 0ffaa0b7117ba8c47a9d05ae701d4b4d - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Skybox_Mat.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 0ffaa0b7117ba8c47a9d05ae701d4b4d' -> (Import Result ID: '6b37adfcda07f6a823dfef6a8a5c7d28') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3c10c6740947a4d21f094e8a931696cc DependenciesID=524cbdae2c0691ac0761766fe4ecc499 StaticDependenciesID=caea381299cd1271df74712bd7e2b4ba 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.7900387Z
-  Time since last request: 0.0006351 seconds.
-  importAddress: GUID: 74e8e1c76d258bc4c9f071738ea495aa - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/DemoScene/DemoScene.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 74e8e1c76d258bc4c9f071738ea495aa - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/DemoScene/DemoScene.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 74e8e1c76d258bc4c9f071738ea495aa' -> (Import Result ID: '2fee6275bb3ff5ea3344cd7062f63559') in 0.054 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=75413e77ee13b8b56f0a668d73726f06 DependenciesID=ffead7e889cc4c8569e89989217d2e9e StaticDependenciesID=ae60ed0f61636b3186e0ca5051b0e60f 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 284
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.8640616Z
-  Time since last request: 0.0000764 seconds.
-  importAddress: GUID: 660609ae00fb200499331d08c1bdba65 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Mask.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 660609ae00fb200499331d08c1bdba65 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Mask.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 660609ae00fb200499331d08c1bdba65' -> (Import Result ID: '087613502d348da44cda4d6fc92c94f2') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=49c366db0cdd6c59617632c9f65dfd30 DependenciesID=788a7dcc3ccf1ff87d79bbeb691a0f19 StaticDependenciesID=0a1aacc9c563b24600f77b7ce29eab98 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.8945893Z
-  Time since last request: 0.0007783 seconds.
-  importAddress: GUID: d847b876476d3d6468f5dfcd34266f96 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-MediumQuality.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: d847b876476d3d6468f5dfcd34266f96 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-MediumQuality.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: d847b876476d3d6468f5dfcd34266f96' -> (Import Result ID: 'b8383fcdbf6c91d6ec60402606546817') in 0.083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b7373e09e1d298617abd1ae439822017 DependenciesID=2d08a1cdd29395e4a7173667088e7c98 StaticDependenciesID=586daf2ae65441f6c2d6bd51451df3ae 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:35.9960297Z
-  Time since last request: 0.0009345 seconds.
-  importAddress: GUID: cb219fb371521054188c0bae8153e9cd - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_G2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: cb219fb371521054188c0bae8153e9cd - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_G2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: cb219fb371521054188c0bae8153e9cd' -> (Import Result ID: 'fbb176fa113ce385a41792dde59315dd') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b03334be98983226f0f23fdd91c7185 DependenciesID=9ae2b6f6d3f2adac2c86f0c96b20d2af StaticDependenciesID=80d2c399d7b196195d38141cf842c0cc 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.0312115Z
-  Time since last request: 0.0001755 seconds.
-  importAddress: GUID: 81fa015d0e3e3734da6a6a94ddbe2c1b - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 81fa015d0e3e3734da6a6a94ddbe2c1b - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 81fa015d0e3e3734da6a6a94ddbe2c1b' -> (Import Result ID: 'bf9cd3b97f1d249ff7ad3d1cd5a175d6') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=13d1908c2db0924e03afc9e635e0731c DependenciesID=029896782e4d397015f3c026305212eb StaticDependenciesID=12dd54f85d8033c79a4d104a98efb19b 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.057257Z
-  Time since last request: 0.0007456 seconds.
-  importAddress: GUID: 20e0fa8e0cb7c1643895985f8d5b14d9 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_F.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 20e0fa8e0cb7c1643895985f8d5b14d9 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_F.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 20e0fa8e0cb7c1643895985f8d5b14d9' -> (Import Result ID: '2ce5f60032cd9c35788f11ea66740ced') in 0.021 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=29e708d0042efe5c8fbc9ec5f96fd032 DependenciesID=c2aa03299dd8344c84a3ec0691eb67c8 StaticDependenciesID=cec0932ab984a37154f455f25ba41e8f 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.092421Z
-  Time since last request: 0.0000742 seconds.
-  importAddress: GUID: 79032e343aa0fc44e9b0b45b017c3c58 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 79032e343aa0fc44e9b0b45b017c3c58 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 79032e343aa0fc44e9b0b45b017c3c58' -> (Import Result ID: '8e872074204926355eb45dd5113e5ca1') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=654a71b3c6cbedeab51dc951f9b4f71c DependenciesID=83cb68e24bb8734a1ce10bc06d066cf6 StaticDependenciesID=1aa016abb34cafb2209a35c5541d09ff 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.1164782Z
-  Time since last request: 0.0011683 seconds.
-  importAddress: GUID: 6f8a22a830d0bfc4e92ab0cc0aa1b8b5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 6f8a22a830d0bfc4e92ab0cc0aa1b8b5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 6f8a22a830d0bfc4e92ab0cc0aa1b8b5' -> (Import Result ID: '45bdb94f0513e1e982dc58783fa751af') in 0.013 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=facfcf2e09b211467c53b97784b13fe3 DependenciesID=8865df6ea0c9a833a0f0b70d5361103d StaticDependenciesID=2fd7a8e9c8a55390006bfed7d28d0e90 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.1480583Z
-  Time since last request: 0.0006129 seconds.
-  importAddress: GUID: 160973fa57fae734c94490fde7de1b10 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Land.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 160973fa57fae734c94490fde7de1b10 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Land.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 160973fa57fae734c94490fde7de1b10' -> (Import Result ID: '5b2591d528d2d33ed0f7901af9f8ae46') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3cf3bba87242b74ae4eed31a3ae2fa76 DependenciesID=08743a4506e7da5b41c10ee7e8a954c2 StaticDependenciesID=eadbbc245d7111b24a7409054a3910c1 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.1799699Z
-  Time since last request: 0.0008246 seconds.
-  importAddress: GUID: b10ef4f07ce157c499f1eff989a7614e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ocean.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: b10ef4f07ce157c499f1eff989a7614e - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ocean.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: b10ef4f07ce157c499f1eff989a7614e' -> (Import Result ID: '93b12dcbdbb0373dd33ff5137ec40131') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=86aef0e62d38b5cde393748b3a4afc90 DependenciesID=e7c176c61d84f31b11ad81d70e391886 StaticDependenciesID=6affc5a2a0e292cc8636429ffc2171e0 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.2097058Z
-  Time since last request: 0.000302 seconds.
-  importAddress: GUID: fba63d9ffc5030f42b8c80155ee9e1d9 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: fba63d9ffc5030f42b8c80155ee9e1d9 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: fba63d9ffc5030f42b8c80155ee9e1d9' -> (Import Result ID: '637b725b4373dd787c4778bc6f600719') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=82a80a43ded07ad6a7506af7d80a9eaf DependenciesID=020950321c7a452715726007a60ba5aa StaticDependenciesID=474ab86e924cd3adf677f6683076e7d9 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.245829Z
-  Time since last request: 0.0100856 seconds.
-  importAddress: GUID: 00e34802479f9fd459b030739febd8a6 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 00e34802479f9fd459b030739febd8a6 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 00e34802479f9fd459b030739febd8a6' -> (Import Result ID: 'e3a24c65fe9083c8c0cbc14c588df38b') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ddfe33e0732028b23966124b59efd71d DependenciesID=5552d3ac2e5c67c502534ac7d8182618 StaticDependenciesID=51a152ee73b4fee872a3922f10af90ee 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.2715606Z
-  Time since last request: 0.0007384 seconds.
-  importAddress: GUID: 9c41d981db5f5c14c8a3c97fa7093eaf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_5.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 9c41d981db5f5c14c8a3c97fa7093eaf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_5.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 9c41d981db5f5c14c8a3c97fa7093eaf' -> (Import Result ID: 'bbbdf282f0a709f5417451b8d36cf69b') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=470f483391a7cda83cff86e543644186 DependenciesID=a391f3754961de4ea79e7861bc8c3398 StaticDependenciesID=38c4e441214dfeb57e1661347ceb64c2 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.3056751Z
-  Time since last request: 0.0003184 seconds.
-  importAddress: GUID: d0234ba368eeec9418390da711bfdad0 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: d0234ba368eeec9418390da711bfdad0 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: d0234ba368eeec9418390da711bfdad0' -> (Import Result ID: 'bd617e5b2cf1eab936aa678630bab915') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9950cc4883c49913a61c37a27b545bc4 DependenciesID=c3d35c773663d75fc91accacdc4d3ee4 StaticDependenciesID=139f88a242ad52aa523aa0a70e28ee1f 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.3279613Z
-  Time since last request: 0.0008494 seconds.
-  importAddress: GUID: 8d8f5ea4461ee664996547d6fbdfb054 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 8d8f5ea4461ee664996547d6fbdfb054 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Stone-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 8d8f5ea4461ee664996547d6fbdfb054' -> (Import Result ID: '921353f5098bb3b074a27baa6d5a0955') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=78e3f1871209b27ac4535efa112147b3 DependenciesID=292f289d1ddf6abf76cc08ffa257c805 StaticDependenciesID=27a04c3503432500f45707282e9deb06 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.3535122Z
-  Time since last request: 0.0007323 seconds.
-  importAddress: GUID: 151dc79f21cceaf42a271efb37da099c - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-4.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 151dc79f21cceaf42a271efb37da099c - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Terrain-4.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 151dc79f21cceaf42a271efb37da099c' -> (Import Result ID: 'd4cc84d7dcec1d3cc82d033bfd911e97') in 0.009 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d1e3834f3a32d1bda0f44de22dde4fd5 DependenciesID=0d46065a7e5e2025daedd698b4cc4ff1 StaticDependenciesID=9dccb00864b7e24a3e12bf9e8a8ff8f7 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.3796363Z
-  Time since last request: 0.0007269 seconds.
-  importAddress: GUID: 34351fb8b2ad12e44aecfdd6a3a0a73a - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_15.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 34351fb8b2ad12e44aecfdd6a3a0a73a - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_15.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 34351fb8b2ad12e44aecfdd6a3a0a73a' -> (Import Result ID: '6249381d92684f40b0cc79df82b7b047') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=abb649d925e4ff32fed2154812b6546b DependenciesID=4de7c7c4426cdbe8015abab5fb882c27 StaticDependenciesID=c28d4490a95a5bedc98d11f56996821b 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.4097507Z
-  Time since last request: 0.0004321 seconds.
-  importAddress: GUID: 7e9a1ea230e000c418e11c3b421734e1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_3.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 7e9a1ea230e000c418e11c3b421734e1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_3.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 7e9a1ea230e000c418e11c3b421734e1' -> (Import Result ID: '452904909f7cb14053ba50a2ddb0d94d') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dfe4be29de665f148b97b20f3b1ed7e4 DependenciesID=67ac4534856c693b2cbba2ba4f4a00ae StaticDependenciesID=853e39ef331eaaec06e6e454d1590e17 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.4446389Z
-  Time since last request: 0.0002054 seconds.
-  importAddress: GUID: 19ba41d7c0026c3459d37c2fe90c55a0 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-HighQuality.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 19ba41d7c0026c3459d37c2fe90c55a0 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-HighQuality.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 19ba41d7c0026c3459d37c2fe90c55a0' -> (Import Result ID: '3db12a484d3e5d14d989f22912c65646') in 0.018 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d606097cb9ca59af62fdaba0db8db812 DependenciesID=6b6af38f9d63db0a01ca7bcb2d8b10a4 StaticDependenciesID=b72c32a36bce7aa81a27ac21482a1b26 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.4782315Z
-  Time since last request: 0.0008158 seconds.
-  importAddress: GUID: 73dc913719880a344b4ddc48eba7b0e7 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 73dc913719880a344b4ddc48eba7b0e7 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 73dc913719880a344b4ddc48eba7b0e7' -> (Import Result ID: 'a63fd7f248fcd327538d52073795b476') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=25d5ea6e71b561624d2e4b93222ab03a DependenciesID=7c6206127622f75ff7a46108118d4208 StaticDependenciesID=42e034d194c877c337d5bb89d7e1d5cd 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.5019761Z
-  Time since last request: 0.0008021 seconds.
-  importAddress: GUID: 228d3ebd5ea75474e9e2536eaabc8a1f - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-6.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 228d3ebd5ea75474e9e2536eaabc8a1f - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-6.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 228d3ebd5ea75474e9e2536eaabc8a1f' -> (Import Result ID: '66683e8bdbdb50f55addf06fa70d9302') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=45dcb0919d1c0194d2fd21adcdfcba5d DependenciesID=5982ac90f9fd7f2c37231f5f4cf3c4dd StaticDependenciesID=8a21cd1414392b1d12a890d24cf2aaa1 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.5334786Z
-  Time since last request: 0.001082 seconds.
-  importAddress: GUID: bcdb601ee0e1144478b160e8530cefa2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_6.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: bcdb601ee0e1144478b160e8530cefa2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_6.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: bcdb601ee0e1144478b160e8530cefa2' -> (Import Result ID: '20ab565f8e57f083bfe06c08f716ff84') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dccf8a3ef08995ea9d9e49b3d7557f5a DependenciesID=c145e0bd6122f2085db38ee1357e2941 StaticDependenciesID=baee77924de48d87657320900493134d 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.5661445Z
-  Time since last request: 0.0004743 seconds.
-  importAddress: GUID: 167742c9202c0fd4da31d23fa9992363 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_8.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 167742c9202c0fd4da31d23fa9992363 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Props_8.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 167742c9202c0fd4da31d23fa9992363' -> (Import Result ID: '436f5cfc6b02a3c6315776f1f8996daf') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b477651224eb30e25e9e7ea8ed7fe867 DependenciesID=32d44c3d7c765cd3201087c077b2c47f StaticDependenciesID=2eb9c467ffa8928d41cba7eb0cb0432e 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.5993671Z
-  Time since last request: 0.0006858 seconds.
-  importAddress: GUID: 873128cb2561cd44181c5b4ea07410b2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-1.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 873128cb2561cd44181c5b4ea07410b2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Textures/Tree-1.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 873128cb2561cd44181c5b4ea07410b2' -> (Import Result ID: 'd2b7a6b72d51f7bb173d2152efdb0743') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4f9cc93314e65a14bfe20abf6b7abe31 DependenciesID=938d393780cc2b854c2443693ce9ede3 StaticDependenciesID=a3a7625588f63b2151e46a5799a4bde1 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.6311775Z
-  Time since last request: 0.0007538 seconds.
-  importAddress: GUID: 03dce3267b3ec6d45b82fc102ee7dba7 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 03dce3267b3ec6d45b82fc102ee7dba7 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 03dce3267b3ec6d45b82fc102ee7dba7' -> (Import Result ID: '7809bdcd741b1df6e5f9d0c4f8efc4d3') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5af1effa956a88d78e0d81fe7e969b1b DependenciesID=7de469bd9bfdcbc1573956387c78e59a StaticDependenciesID=6dffb7db623b158434800c288e62a158 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.6523591Z
-  Time since last request: 0.0007382 seconds.
-  importAddress: GUID: c5f4a9658803981469ebe90da3bd7fbf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: c5f4a9658803981469ebe90da3bd7fbf - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: c5f4a9658803981469ebe90da3bd7fbf' -> (Import Result ID: '4f77ce1f414b861abdfe16a5a2a7d2cf') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=72e165c3492385ba14a4bd7388143ae6 DependenciesID=a468d78dd65edde0fb606d378baff2ee StaticDependenciesID=9e9ec6f11f5120f148da36b431c7b179 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.6767212Z
-  Time since last request: 0.0007648 seconds.
-  importAddress: GUID: ab6e2fd1d942a394b9c0e3ce70d9ad63 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: ab6e2fd1d942a394b9c0e3ce70d9ad63 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: ab6e2fd1d942a394b9c0e3ce70d9ad63' -> (Import Result ID: 'fa0ec959e415bd9eee0f3faba1ffe6bd') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a166d1b8d8bc1a8e4688495eee0ad648 DependenciesID=583666baf482976091f51cb857dbd8a0 StaticDependenciesID=f83cb8dee64de1bd3ff6b1c3da1a2724 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.704675Z
-  Time since last request: 0.0007582 seconds.
-  importAddress: GUID: c6167d9e9d25c0a42a42842b617775c3 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_3.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: c6167d9e9d25c0a42a42842b617775c3 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Stone_3.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: c6167d9e9d25c0a42a42842b617775c3' -> (Import Result ID: 'e6dc9411f36f86949240ea75c045f436') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8f7afe46606d83409314791f1a062c1b DependenciesID=6dad9b51abfccbad678aed2dcd541476 StaticDependenciesID=1769a77ba33684c158b49be35ae8c5a8 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.7361192Z
-  Time since last request: 0.0003988 seconds.
-  importAddress: GUID: a31e9f9f9c9d4b9429ed0d1234e22103 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-LowQuality.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: a31e9f9f9c9d4b9429ed0d1234e22103 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Settings/UniversalRP-LowQuality.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: a31e9f9f9c9d4b9429ed0d1234e22103' -> (Import Result ID: '5b56821245dc29f5a773f677c76e19ba') in 0.019 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=400a290c8857a19e11e8db960f70cad2 DependenciesID=7fe68166504862675bdb586eaf8f8f67 StaticDependenciesID=d6d842ab137d2556e3900a105471818f 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.7730186Z
-  Time since last request: 0.0006595 seconds.
-  importAddress: GUID: e1dffa31a3a1e9440bb3cc1995515268 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/DemoScene - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: e1dffa31a3a1e9440bb3cc1995515268 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/DemoScene - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: e1dffa31a3a1e9440bb3cc1995515268' -> (Import Result ID: '4895dea4019a4f378748360d0ed02ba8') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e9d6b4885296861fc95287cef51a2cd3 DependenciesID=277177d0b31051d23b00b653e765f7ac StaticDependenciesID=3f197baca51409ec33949a2ae0fca13a 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.7945457Z
-  Time since last request: 0.0006701 seconds.
-  importAddress: GUID: 68c7915e0967e9c4997abb068bcb6ec1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 68c7915e0967e9c4997abb068bcb6ec1 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tree_2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 68c7915e0967e9c4997abb068bcb6ec1' -> (Import Result ID: 'd007f52cbbb3a0bee50171975e88bd8f') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d471b77f49dcd88e082ca7f51228a376 DependenciesID=d3d3ae18dc091601ccdd94b29081345c StaticDependenciesID=cc4ec8bff4b797e32b50e958ddd86d7d 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.8177588Z
-  Time since last request: 0.0004368 seconds.
-  importAddress: GUID: 14562ff1e56b3424c83b07a3e25b9414 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 14562ff1e56b3424c83b07a3e25b9414 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Tree-2.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 14562ff1e56b3424c83b07a3e25b9414' -> (Import Result ID: '056df3f30d9296cf5ee3771d8aeac1f6') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b2dccf3b2b3419d5c8d1b88e69cf63f DependenciesID=41e1c6be39e1b4a1a137dba2b328fc76 StaticDependenciesID=f857b77c50e39bbb296eb0a7ca6b87e9 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.8438813Z
-  Time since last request: 0.0007092 seconds.
-  importAddress: GUID: 3007f24466db0fb43b9ec398808a54a2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 3007f24466db0fb43b9ec398808a54a2 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Tip_Board_1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 3007f24466db0fb43b9ec398808a54a2' -> (Import Result ID: '2f5d16e38b9673b2702f00bcda6c5b78') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7a7f4a5bc42fdc3f6c1e0dd7e6c99609 DependenciesID=9cdee4d9a634d9a543ba0a8ff1400b53 StaticDependenciesID=d4825d2291e94a3f4d5f4fc8b05f2f75 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.8775301Z
-  Time since last request: 0.0001328 seconds.
-  importAddress: GUID: 71f3a5a4e9a4f0c4e987e096c37a96e5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_D1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 71f3a5a4e9a4f0c4e987e096c37a96e5 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_D1.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 71f3a5a4e9a4f0c4e987e096c37a96e5' -> (Import Result ID: 'e9302f6316787f53aa1e60717b44f4bc') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=153e2ffc49ba03d3924e1f4ccdc18e38 DependenciesID=598e0f719886b62fa72b3fd182e744b1 StaticDependenciesID=67f9cefdab68ea0ca8930861026036df 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.9104836Z
-  Time since last request: 0.0000394 seconds.
-  importAddress: GUID: 2c09ef49c13be054891579dd4de949de - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: 2c09ef49c13be054891579dd4de949de - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Props-1.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: 2c09ef49c13be054891579dd4de949de' -> (Import Result ID: 'ce640a5c9ec95d4e33ae8e4781726055') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3e0f807e0bcc9ada068f845f28285acd DependenciesID=155dcc93a66426a1bbfc660e0d33547f StaticDependenciesID=a6134db08e216ffbeeb201379a22fafc 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.9354011Z
-  Time since last request: 0.0005852 seconds.
-  importAddress: GUID: aa50052c471ecdb43970d0115bb3a704 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: aa50052c471ecdb43970d0115bb3a704 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: aa50052c471ecdb43970d0115bb3a704' -> (Import Result ID: 'b0b257e60790fc9a6d2ca507796e443d') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b008abaef62d1492a4f2fc0e00b77dbd DependenciesID=43f4a9376976c24da8876ce42c791c03 StaticDependenciesID=3ad5dfb7d6483b438e571dc1a766cbc4 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:36.9549877Z
-  Time since last request: 0.0006907 seconds.
-  importAddress: GUID: fa69697be3070b04a893666f5947f18c - Path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Runtime UI Resources/RuntimeDebugWindow_PanelSettings.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: fa69697be3070b04a893666f5947f18c - Path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Runtime UI Resources/RuntimeDebugWindow_PanelSettings.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: fa69697be3070b04a893666f5947f18c' -> (Import Result ID: '85a964a46db11cfe19113cc40fe1438f') in 0.089 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8f0d9346331b46c686aea8e18520c6f4 DependenciesID=42cc7f312ccd063d15831c55c405453c StaticDependenciesID=b6ab6ebc8b370c290f6fb037b77fdb2b 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:37.0624253Z
-  Time since last request: 0.0008113 seconds.
-  importAddress: GUID: de715bd0e61c62a4cadff578735a5794 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: de715bd0e61c62a4cadff578735a5794 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Art/Materials/Environments/Ground-3.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: de715bd0e61c62a4cadff578735a5794' -> (Import Result ID: '3203b0a69024414b48428827e23db63d') in 0.015 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9aca74249b861b4a2e0ef4c5c3c5df2d DependenciesID=9a422ebd78eae17088436d775a483da7 StaticDependenciesID=edefa31a6fcf6a56559653cb9d91f984 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time of request: 2026-08-21T19:51:37.1048589Z
-  Time since last request: 0.0012493 seconds.
-  importAddress: GUID: b842aee6341024f4589ba59ff0ddc909 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_E2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: b842aee6341024f4589ba59ff0ddc909 - Path: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Prefabs/Environments/Ground_E2.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: b842aee6341024f4589ba59ff0ddc909' -> (Import Result ID: '6ef3ba386a1d86528eb305bc3513f1e2') in 0.020 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5e3bea3ecd11867a5c50a32b80693c1e DependenciesID=8755d6617d214a7f14426026b9b9f2cd StaticDependenciesID=7101283a0f9c734635ad9feae33a7eb8 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Refreshing native plugins compatible for Editor in 3.12 ms, found 4 plugins.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (2.6 MB). Loaded Objects now: 7664.
+Memory consumption went from 342.0 MB to 339.4 MB.
+Total: 10.865700 ms (FindLiveObjects: 0.579900 ms CreateObjectMapping: 0.853600 ms MarkObjects: 8.613600 ms  DeleteObjects: 0.816200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Editor is closing down
 AcceleratorClientConnectionCallback - disconnected - :0
 AssetImportWorker is now disconnected from the server
