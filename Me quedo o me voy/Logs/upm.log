@@ -1,3 +1,57 @@
-[2026-08-21T17:29:52.157Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.8f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 21144 --ipc-path Unity-Upm-21144 -l 2 --log-file 'C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\TP-Inicial---Me-quedo-o-me-voy\\Me quedo o me voy/Logs/upm.log'
-[2026-08-21T17:29:52.212Z][INFO] IPC server started (IPC path=Unity-Upm-21144).
-[2026-08-21T17:29:52.212Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-21144.
+[2026-08-22T23:20:48.307Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.8f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 14000 --ipc-path Unity-Upm-14000 -l 2 --log-file 'C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\TP-Inicial---Me-quedo-o-me-voy\\Me quedo o me voy/Logs/upm.log'
+[2026-08-22T23:20:48.386Z][INFO] IPC server started (IPC path=Unity-Upm-14000).
+[2026-08-22T23:20:48.386Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-14000.
+[2026-08-22T23:21:25.411Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:21:25.748Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-22T23:21:25.753Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:21:26.098Z][INFO] config:project:get-registries --> 200 (350 ms)
+[2026-08-22T23:21:26.561Z][INFO] project:list-packages --> 200 (1150 ms)
+[2026-08-22T23:21:26.569Z][INFO] project:list-packages --> 200 (816 ms)
+[2026-08-22T23:21:51.662Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:21:51.721Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:21:52.020Z][INFO] project:list-packages --> 200 (358 ms)
+[2026-08-22T23:21:52.057Z][INFO] project:list-packages --> 200 (337 ms)
+[2026-08-22T23:21:55.299Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:21:55.487Z][INFO] project:list-packages --> 200 (188 ms)
+[2026-08-22T23:21:55.705Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-22T23:21:55.711Z][INFO] config:project:get-registries --> 200 (6 ms)
+[2026-08-22T23:22:01.362Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:22:01.703Z][INFO] project:list-packages --> 200 (341 ms)
+[2026-08-22T23:22:07.336Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:22:08.889Z][INFO] project:list-packages --> 200 (1553 ms)
+[2026-08-22T23:52:17.538Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:52:17.759Z][INFO] project:list-packages --> 200 (221 ms)
+[2026-08-22T23:52:17.959Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-22T23:52:18.184Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-08-22T23:52:18.196Z][INFO] project:list-packages --> 200 (237 ms)
+[2026-08-22T23:52:18.198Z][INFO] config:project:get-registries --> 200 (14 ms)
+[2026-08-23T00:06:26.724Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-23T00:06:27.135Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-23T00:06:28.310Z][INFO] project:list-packages --> 200 (1585 ms)
+[2026-08-23T00:06:28.311Z][INFO] project:list-packages --> 200 (1176 ms)
+[2026-08-23T00:06:31.738Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-23T00:06:31.919Z][INFO] project:list-packages --> 200 (181 ms)
+[2026-08-23T00:06:32.156Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-23T00:06:32.328Z][INFO] project:list-packages --> 200 (172 ms)
+[2026-08-23T00:06:33.211Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-23T00:06:33.402Z][INFO] project:list-packages --> 200 (191 ms)
+[2026-08-23T00:06:33.791Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-08-23T00:06:33.961Z][INFO] project:list-packages --> 200 (170 ms)
