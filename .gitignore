@@ -1,6 +1,50 @@
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Build]/
-/[Logs]/
-/[UserSettings]/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Capturas de memoria y grabaciones (pueden ocupar mucho espacio)
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Archivos de metadatos (nunca ignores los .meta generales de los Assets)
+!/[Aa]ssets/**/*.meta
+
+# Cachés de entornos de desarrollo e IDEs
+.vs/
+.gradle/
+[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Archivos de proyectos y soluciones generados automáticamente
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Reportes de errores y compilaciones finales
+sysinfo.txt
+*.apk
+*.unitypackage
+*.aab
+*.app
+*.exe
+# Cualquier otro archivo .log suelto en el proyecto
+*.log
+# Archivos propios del sistema operativo
+.DS_Store
+Thumbs.db
