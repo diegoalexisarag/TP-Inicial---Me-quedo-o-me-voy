@@ -62,6 +62,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Obstaculos Script\VolverAPosicion.cs" />
     <Compile Include="Assets\Obstaculos Script\pendulo.cs" />
+    <Compile Include="Assets\Obstaculos Script\Respawn.cs" />
     <Compile Include="Assets\Obstaculos Script\RotacionContinua.cs" />
   </ItemGroup>
   <ItemGroup>
