@@ -53,16 +53,16 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.5.8f1\Editor\Data\BCLExtensions\TargetingPacks\netstandard2.1\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Scripts\controlar.cs" />
     <Compile Include="Assets\POLY STYLE - Platformer Starter Pack\Platformer Starter Pack_URP\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\Scripts\playerRespawnAndCheckpoint.cs" />
     <Compile Include="Assets\Obstaculos Script\MoviminetoPorPuntos.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Respawn.cs" />
     <Compile Include="Assets\Obstaculos Script\VolverAPosicion.cs" />
     <Compile Include="Assets\Obstaculos Script\pendulo.cs" />
-    <Compile Include="Assets\Obstaculos Script\Respawn.cs" />
     <Compile Include="Assets\Obstaculos Script\RotacionContinua.cs" />
   </ItemGroup>
   <ItemGroup>

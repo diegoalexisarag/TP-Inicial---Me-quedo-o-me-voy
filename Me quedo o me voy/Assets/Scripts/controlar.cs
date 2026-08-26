@@ -71,7 +71,6 @@ public class controlar : MonoBehaviour {
 	
 	bool EstaEnElSuelo (){
     bool resultado = Physics.Raycast(transform.position, -Vector3.up, distanciaAlSuelo + 0.1f);
-    Debug.Log("EstaEnElSuelo: " + resultado + " | distancia usada: " + (distanciaAlSuelo + 0.1f));
     return resultado;
 }
 	
