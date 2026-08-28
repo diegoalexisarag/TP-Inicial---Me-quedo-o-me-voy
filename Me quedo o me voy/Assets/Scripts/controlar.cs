@@ -206,18 +206,11 @@ public class controlar : MonoBehaviour {
         audioSource.clip = sonidoBaile1;
         audioSource.Play();
     	}
-		if (Input.GetKeyDown(KeyCode.I) && EstaEnElSuelo() && !isMoving)
+		if (Input.GetKeyDown(KeyCode.O) && EstaEnElSuelo() && !isMoving)
     	{
         animator.SetTrigger("Dance01");
 		audioSource.Stop();
         audioSource.clip = sonidoBaile2;
-        audioSource.Play();
-    	}
-		if (Input.GetKeyDown(KeyCode.O) && EstaEnElSuelo() && !isMoving)
-    	{
-        animator.SetTrigger("Dance02");
-		audioSource.Stop();
-        audioSource.clip = sonidoBaile3;
         audioSource.Play();
     	}
 		
