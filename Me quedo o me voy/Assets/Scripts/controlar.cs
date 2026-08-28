@@ -213,6 +213,13 @@ public class controlar : MonoBehaviour {
         audioSource.clip = sonidoBaile2;
         audioSource.Play();
     	}
+		if (Input.GetKeyDown(KeyCode.I) && EstaEnElSuelo() && !isMoving)
+    	{
+        animator.SetTrigger("Dance02");
+		audioSource.Stop();
+        audioSource.clip = sonidoBaile3;
+        audioSource.Play();
+    	}
 		
 		RaycastHit hit;
 		if (Physics.Raycast(transform.position, -Vector3.up, out hit, distanciaAlSuelo + 0.1f))
