@@ -6,7 +6,7 @@ using UnityEngine.TestTools;
 public class MecanicaSaltoTests
 {
     private GameObject playerGameObject;
-    private Controlar scriptControlar;
+    private controlar scriptControlar;
     private Rigidbody rb;
 
     [SetUp]
@@ -20,7 +20,7 @@ public class MecanicaSaltoTests
         Animator animator = playerGameObject.AddComponent<Animator>();
         animator.runtimeAnimatorController = new UnityEditor.Animations.AnimatorController();
 
-        scriptControlar = playerGameObject.AddComponent<Controlar>();
+        scriptControlar = playerGameObject.AddComponent<controlar>();
 
         scriptControlar.jumpHeight = 2.0f;
         scriptControlar.gravity = 10.0f;

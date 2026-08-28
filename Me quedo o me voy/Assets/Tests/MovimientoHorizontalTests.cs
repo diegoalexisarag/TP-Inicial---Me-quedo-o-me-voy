@@ -7,7 +7,7 @@ public class MovimientoHorizontalTests
 {
     private GameObject playerGameObject;
     private GameObject sueloGameObject;
-    private Controlar scriptControlar;
+    private controlar scriptControlar;
     private Rigidbody rb;
 
     [SetUp]
@@ -27,7 +27,7 @@ public class MovimientoHorizontalTests
         rb.useGravity = false; // Desactivar gravedad para aislar pruebas de movimiento horizontal
 
         // Desactivar script para evitar escrituras en Update/Animator durante la simulación manual
-        scriptControlar = playerGameObject.AddComponent<Controlar>();
+        scriptControlar = playerGameObject.AddComponent<controlar>();
         scriptControlar.walkSpeed = 3.0f;
         scriptControlar.runSpeed = 6.0f;
         scriptControlar.rotateSpeed = 15.0f;
