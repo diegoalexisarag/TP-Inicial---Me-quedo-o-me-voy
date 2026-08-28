@@ -1,346 +1,349 @@
 using UnityEngine;
 using System.Collections;
 
-[RequireComponent (typeof (Rigidbody))]
-[RequireComponent (typeof (CapsuleCollider))]
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(CapsuleCollider))]
+public class Controlar : MonoBehaviour
+{
+    [Header("Configuración de Velocidad")]
+    public float walkSpeed = 3f;
+    public float runSpeed = 6f;
+    public float airVelocity = 8f;
+    public float gravity = 10.0f;
+    public float jumpHeight = 2.0f;
+    public float rotateSpeed = 15f;
+    
+    [Header("Configuración de Empuje")]
+    public float fuerzaDeEmpuje = 55.0f;
+    public bool tienePoderDeEmpuje = false;
 
-public class controlar : MonoBehaviour {
-	
-	//public float speed = 10.0f;
-	public float currentSpeed;
-	public float airVelocity = 8f;
-	public float gravity = 10.0f;
-	//public float maxVelocityChange = 10.0f;
-	public float jumpHeight = 2.0f;
-	//public float maxFallSpeed = 20.0f;
-	public float rotateSpeed = 15f;
-	public float fuerzaDeEmpuje = 55.0f;
-	public bool tienePoderDeEmpuje = false;
-	private Vector3 moveDir;
-	private Rigidbody rb;
-	private Animator animator;
+    [Header("Cámara Cinemachine")]
+    public GameObject CinemachineCameraTarget;
+    public float TopClamp = 70.0f;
+    public float BottomClamp = -30.0f;
+    public float MouseSensitivity = 1.0f;
 
-	private bool isRunning;
-	private bool isMoving;
-	public float walkSpeed = 3f;
-	public float runSpeed = 6f;
-	private float VerticalVelocity;
+    // Variables internas optimizadas
+    private float currentSpeed;
+    private float VerticalVelocity;
+    private float pushForce;
+    private Vector3 pushDir;
+    private Vector3 moveDir;
+    private Vector3 checkPoint;
+    private float distanciaAlSuelo;
+    private float masaRigidbody; // Caché de la masa
 
-	private float distanciaAlSuelo;
+    // Estados
+    private bool isRunning;
+    private bool isMoving;
+    private bool canMove = true;
+    private bool estaAturdido = false;
+    private bool estuvoAturdido = false;
+    private bool slide = false;
 
-	private bool canMove = true;
-	private bool estaAturdido = false;
-	private bool estuvoAturdido = false;
-	private float pushForce;
-	private Vector3 pushDir;
+    // Componentes cacheados
+    private Rigidbody rb;
+    private Animator animator;
 
-	public Vector3 checkPoint;
-	private bool slide = false;
+    // Hashes de Animación (Optimización masiva)
+    private readonly int isMovingHash = Animator.StringToHash("IsMoving");
+    private readonly int isRunningHash = Animator.StringToHash("IsRunning");
+    private readonly int groundedHash = Animator.StringToHash("Grounded");
+    private readonly int verticalVelocityHash = Animator.StringToHash("VerticalVelocity");
+    private readonly int jumpHash = Animator.StringToHash("Jump");
+    private readonly int danceHash = Animator.StringToHash("Dance");
+    private readonly int dance01Hash = Animator.StringToHash("Dance01");
+    private readonly int dance02Hash = Animator.StringToHash("Dance02");
 
-	//[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
-	public GameObject CinemachineCameraTarget;
+    // Cinemachine
+    private float _cinemachineTargetYaw;
+    private float _cinemachineTargetPitch;
+    private const float _threshold = 0.01f;
 
-	//[Tooltip("How far in degrees can you move the camera up")]
-	public float TopClamp = 70.0f;
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
+        
+        rb.freezeRotation = true;
+        rb.useGravity = false;
+        masaRigidbody = rb.mass; // Guardamos la masa una sola vez al inicio
 
-	//[Tooltip("How far in degrees can you move the camera down")]
-	public float BottomClamp = -30.0f;
+        distanciaAlSuelo = GetComponent<Collider>().bounds.extents.y;
+        checkPoint = transform.position;
+        
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
-	//[Tooltip("Additional degress to override the camera. Useful for fine tuning camera position when locked")]
-	//public float CameraAngleOverride = 0.0f;
+    void Start()
+    {
+        if (CinemachineCameraTarget != null)
+            _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
+    }
 
-	//[Tooltip("For locking the camera position on all axis")]
-	//public bool LockCameraPosition = false;
+    void Update()
+    {
+        // 1. Recolección de Inputs
+        isRunning = Input.GetKey(KeyCode.LeftShift);
+        currentSpeed = (isRunning && isMoving) ? runSpeed : walkSpeed;
+        VerticalVelocity = rb.linearVelocity.y;
 
-	//[Tooltip("Mouse look sensitivity")]
-	public float MouseSensitivity = 1.0f;
+        float h = Input.GetAxisRaw("Horizontal"); // GetAxisRaw elimina el input smoothing nativo (mejor respuesta)
+        float v = Input.GetAxisRaw("Vertical");
 
-	// cinemachine
-	private float _cinemachineTargetYaw;
-	private float _cinemachineTargetPitch;
+        Vector3 inputDir = new Vector3(h, 0, v).normalized;
 
-	private const float _threshold = 0.01f;
+        if (inputDir.sqrMagnitude > 0.1f)
+        {
+            float camYaw = CinemachineCameraTarget != null ? CinemachineCameraTarget.transform.eulerAngles.y : transform.eulerAngles.y;
+            Quaternion camYawRotation = Quaternion.Euler(0f, camYaw, 0f);
+            moveDir = camYawRotation * inputDir;
+            isMoving = true;
+        }
+        else
+        {
+            moveDir = Vector3.zero;
+            isMoving = false;
+        }
 
-	void  Start (){
-		animator = GetComponent<Animator>();
-		distanciaAlSuelo = GetComponent<Collider>().bounds.extents.y;
+        // 2. Detección de Suelo y Superficies Deslizantes
+        ManejarDeteccionDeSuelo();
 
-		if (CinemachineCameraTarget != null)
-			_cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
-	}
-	
-	bool EstaEnElSuelo (){
-    bool resultado = Physics.Raycast(transform.position, -Vector3.up, distanciaAlSuelo + 0.1f);
-    return resultado;
-}
-	
-	//bool EstaEnElSuelo (){
-	//	return Physics.Raycast(transform.position, -Vector3.up, distanciaAlSuelo + 0.1f);
-	//}
-	
-	void Awake () {
-		rb = GetComponent<Rigidbody>();
-		rb.freezeRotation = true;
-		rb.useGravity = false;
+        // 3. Inputs de Animación y Salto
+        ManejarInputsAcciones();
+        UpdateAnimations();
+    }
 
-		checkPoint = transform.position;
-		Cursor.visible = false;
-		Cursor.lockState = CursorLockMode.Locked;
-	}
-	
-	void FixedUpdate () {
-		if (canMove)
-		{
-			if (moveDir.x != 0 || moveDir.z != 0)
-			{
-				Vector3 targetDir = moveDir;
+    void FixedUpdate()
+    {
+        if (canMove)
+        {
+            MoverJugadorFisicas();
+            RotarJugadorFisicas();
+        }
+        else
+        {
+            rb.linearVelocity = pushDir * pushForce;
+        }
 
-				targetDir.y = 0;
-				if (targetDir == Vector3.zero)
-					targetDir = transform.forward;
-				    Quaternion targetRotation = Quaternion.LookRotation(targetDir);
-    				transform.rotation = Quaternion.RotateTowards(
-        			transform.rotation,
-        			targetRotation,
-        			rotateSpeed * 10f * Time.fixedDeltaTime
-    				);
-			}
+        // Gravedad extra optimizada (sin GetComponent)
+        rb.AddForce(new Vector3(0, -gravity * masaRigidbody, 0));
+    }
 
-			if (EstaEnElSuelo())
-			{
-				Vector3 targetVelocity = moveDir;
-				targetVelocity *= currentSpeed;
+    private void LateUpdate()
+    {
+        CameraRotation();
+    }
 
-				Vector3 velocity = rb.linearVelocity;
-				if (targetVelocity.magnitude < velocity.magnitude)
-				{
-					targetVelocity = velocity;
-					rb.linearVelocity /= 1.1f;
-				}
-				Vector3 velocityChange = (targetVelocity - velocity);
-				//velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
-				//velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
-				velocityChange.y = 0;
-				if (!slide)
-				{
-					if (Mathf.Abs(rb.linearVelocity.magnitude) < currentSpeed * 1.0f)
-						rb.AddForce(velocityChange, ForceMode.VelocityChange);
-				}
-				else if (Mathf.Abs(rb.linearVelocity.magnitude) < currentSpeed * 1.0f)
-				{
-					rb.AddForce(moveDir * 0.15f, ForceMode.VelocityChange);
-				}
+    #region Lógica de Movimiento y Físicas
 
-				// Jump
-				if (EstaEnElSuelo() && Input.GetButton("Jump"))
-				{
-					rb.linearVelocity = new Vector3(velocity.x, CalcularVelocidadVerticalSalto(), velocity.z);
-					animator.SetTrigger("Jump");
-				}
-			}
-			else
-			{
-				if (!slide)
-				{
-					Vector3 targetVelocity = new Vector3(moveDir.x * airVelocity, rb.linearVelocity.y, moveDir.z * airVelocity);
-					Vector3 velocity = rb.linearVelocity;
-					Vector3 velocityChange = (targetVelocity - velocity);
-					//velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
-					//velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
-					rb.AddForce(velocityChange, ForceMode.VelocityChange);
-					//if (velocity.y < -maxFallSpeed)
-					//	rb.linearVelocity = new Vector3(velocity.x, -maxFallSpeed, velocity.z);
-				}
-				else if (Mathf.Abs(rb.linearVelocity.magnitude) < currentSpeed * 1.0f)
-				{
-					rb.AddForce(moveDir * 0.15f, ForceMode.VelocityChange);
-				}
-			}
-		}
-		else
-		{
-			rb.linearVelocity = pushDir * pushForce;
-		}
-		rb.AddForce(new Vector3(0, -gravity * GetComponent<Rigidbody>().mass, 0));
-	}
+    private void MoverJugadorFisicas()
+    {
+        bool enSuelo = EstaEnElSuelo();
+        Vector3 targetVelocity = moveDir * (enSuelo ? currentSpeed : airVelocity);
+        Vector3 velocity = rb.linearVelocity;
+        
+        // Frenado preciso y responsivo
+        if (moveDir == Vector3.zero && enSuelo && !slide)
+        {
+            // Forzamos la velocidad horizontal a cero inmediatamente para evitar deslizamientos
+            rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, 0);
+            return;
+        }
 
-	private void Update()
-	{
-		isRunning = Input.GetKey(KeyCode.LeftShift);
-		currentSpeed = (isRunning&&isMoving) ? runSpeed: walkSpeed;
+        Vector3 velocityChange = (targetVelocity - velocity);
+        velocityChange.y = 0; // Mantenemos intacta la velocidad vertical (gravedad/salto)
 
-		VerticalVelocity = rb.linearVelocity.y;
+        if (!slide || (slide && velocity.magnitude < currentSpeed))
+        {
+            // Usamos un multiplicador para que la aceleración en el aire sea más suave que en el suelo
+            float aceleracion = enSuelo ? 1f : 0.5f; 
+            rb.AddForce(velocityChange * aceleracion, ForceMode.VelocityChange);
+        }
+        else if (slide)
+        {
+            rb.AddForce(moveDir * 0.15f, ForceMode.VelocityChange);
+        }
+    }
 
-		float h = Input.GetAxis("Horizontal");
-		float v = Input.GetAxis("Vertical");
+    private void RotarJugadorFisicas()
+    {
+        if (moveDir != Vector3.zero)
+        {
+            Vector3 targetDir = moveDir;
+            targetDir.y = 0;
+            
+            Quaternion targetRotation = Quaternion.LookRotation(targetDir);
+            // IMPORTANTE: Usar MoveRotation en lugar de transform.rotation previene los temblores de físicas
+            Quaternion nuevaRotacion = Quaternion.RotateTowards(rb.rotation, targetRotation, rotateSpeed * 10f * Time.fixedDeltaTime);
+            rb.MoveRotation(nuevaRotacion); 
+        }
+    }
 
-		Vector3 inputDir = new Vector3(h, 0, v);
-		if (inputDir.sqrMagnitude > 0.0001f)
-		{
-			// Rotamos el input según hacia dónde mira la cámara (yaw), así "adelante" es "adelante de la cámara"
-			float camYaw = CinemachineCameraTarget != null ? CinemachineCameraTarget.transform.eulerAngles.y : transform.eulerAngles.y;
-			Quaternion camYawRotation = Quaternion.Euler(0f, camYaw, 0f);
-			moveDir = (camYawRotation * inputDir).normalized;
-		}
-		else
-		{
-			moveDir = Vector3.zero;
-		}
-		if (Input.GetKeyDown(KeyCode.P) && EstaEnElSuelo() && !isMoving)
-    	{
-        animator.SetTrigger("Dance");
-    	}
-		if (Input.GetKeyDown(KeyCode.I) && EstaEnElSuelo() && !isMoving)
-    	{
-        animator.SetTrigger("Dance01");
-    	}
-		if (Input.GetKeyDown(KeyCode.O) && EstaEnElSuelo() && !isMoving)
-    	{
-        animator.SetTrigger("Dance02");
-    	}
-		
-		RaycastHit hit;
-		if (Physics.Raycast(transform.position, -Vector3.up, out hit, distanciaAlSuelo + 0.1f))
-		{
-			if (hit.transform.tag == "Slide")
-			{
-				slide = true;
-			}
-			else
-			{
-				slide = false;
-			}
-		}
-		UpdateAnimations();
-	}
-	public void UpdateAnimations()
-	{
-			isMoving = moveDir.magnitude > 0.1f;
+    private void ManejarInputsAcciones()
+    {
+        if (EstaEnElSuelo())
+        {
+            if (Input.GetButton("Jump"))
+            {
+                rb.linearVelocity = new Vector3(rb.linearVelocity.x, CalcularVelocidadVerticalSalto(), rb.linearVelocity.z);
+                animator.SetTrigger(jumpHash);
+            }
+            
+            if (!isMoving)
+            {
+                if (Input.GetKeyDown(KeyCode.P)) animator.SetTrigger(danceHash);
+                if (Input.GetKeyDown(KeyCode.I)) animator.SetTrigger(dance01Hash);
+                if (Input.GetKeyDown(KeyCode.O)) animator.SetTrigger(dance02Hash);
+            }
+        }
+    }
 
-			animator.SetBool("IsMoving", isMoving);
-			animator.SetBool("IsRunning", isRunning && isMoving);
-			animator.SetBool("Grounded", EstaEnElSuelo());
-			animator.SetFloat("VerticalVelocity", VerticalVelocity);
-	}
+    private void ManejarDeteccionDeSuelo()
+    {
+        if (Physics.Raycast(transform.position, -Vector3.up, out RaycastHit hit, distanciaAlSuelo + 0.1f))
+        {
+            // Optimización: CompareTag es mucho más rápido y no genera basura en memoria
+            slide = hit.collider.CompareTag("Slide");
+        }
+        else
+        {
+            slide = false;
+        }
+    }
 
+    private bool EstaEnElSuelo()
+    {
+        return Physics.Raycast(transform.position, -Vector3.up, distanciaAlSuelo + 0.1f);
+    }
 
+    #endregion
 
-	private void LateUpdate()
-	{
-		CameraRotation();
-	}
+    #region Cámara y Animaciones
 
-	private void CameraRotation()
-	{
-		if (CinemachineCameraTarget == null)
-			return;
+    private void CameraRotation()
+    {
+        if (CinemachineCameraTarget == null) return;
 
-		// Input del mouse (reemplaza a _input.look del nuevo Input System)
-		Vector2 look = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * MouseSensitivity;
+        Vector2 look = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * MouseSensitivity;
 
-		// si hay input y la posición de cámara no está fija
-		if (look.sqrMagnitude >= _threshold)
-		{
-			// el input de mouse no se multiplica por Time.deltaTime
-			_cinemachineTargetYaw += look.x;
-			_cinemachineTargetPitch -= look.y;
-		}
+        if (look.sqrMagnitude >= _threshold)
+        {
+            _cinemachineTargetYaw += look.x;
+            _cinemachineTargetPitch -= look.y;
+        }
 
-		// clamp para que los valores queden limitados a 360 grados
-		_cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, float.MinValue, float.MaxValue);
-		_cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
+        _cinemachineTargetYaw = ClampAngle(_cinemachineTargetYaw, float.MinValue, float.MaxValue);
+        _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
 
-		// Cinemachine seguirá a este target
-		CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch,
-			_cinemachineTargetYaw, 0.0f);
-	}
+        CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch, _cinemachineTargetYaw, 0.0f);
+    }
 
-	private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
-	{
-		if (lfAngle < -360f) lfAngle += 360f;
-		if (lfAngle > 360f) lfAngle -= 360f;
-		return Mathf.Clamp(lfAngle, lfMin, lfMax);
-	}
+    private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
+    {
+        if (lfAngle < -360f) lfAngle += 360f;
+        if (lfAngle > 360f) lfAngle -= 360f;
+        return Mathf.Clamp(lfAngle, lfMin, lfMax);
+    }
 
-	float CalcularVelocidadVerticalSalto () {
-		return Mathf.Sqrt(2 * jumpHeight * gravity);
-	}
+    public void UpdateAnimations()
+    {
+        // Optimización: Usamos Hashes enteros en lugar de buscar strings
+        animator.SetBool(isMovingHash, isMoving);
+        animator.SetBool(isRunningHash, isRunning && isMoving);
+        animator.SetBool(groundedHash, EstaEnElSuelo());
+        animator.SetFloat(verticalVelocityHash, VerticalVelocity);
+    }
 
-	public void HitPlayer(Vector3 velocityF, float time)
-	{
-		rb.linearVelocity = velocityF;
+    #endregion
 
-		pushForce = velocityF.magnitude;
-		pushDir = Vector3.Normalize(velocityF);
-		StartCoroutine(Disminuir(velocityF.magnitude, time));
-	}
+    #region Utilidades y Corrutinas
 
-	public void LoadCheckPoint()
-	{
-		transform.position = checkPoint;
-	}
+    float CalcularVelocidadVerticalSalto()
+    {
+        return Mathf.Sqrt(2 * jumpHeight * gravity);
+    }
 
-	private IEnumerator Disminuir(float value, float duration)
-	{
-		if (estaAturdido)
-			estuvoAturdido = true;
-		estaAturdido = true;
-		canMove = false;
+    public void HitPlayer(Vector3 velocityF, float time)
+    {
+        rb.linearVelocity = velocityF;
+        pushForce = velocityF.magnitude;
+        pushDir = velocityF.normalized;
+        StartCoroutine(Disminuir(velocityF.magnitude, time));
+    }
 
-		float delta = 0;
-		delta = value / duration;
+    public void LoadCheckPoint()
+    {
+        // Desactivar físicas temporalmente al teletransportar previene bugs visuales
+        rb.isKinematic = true; 
+        transform.position = checkPoint;
+        rb.isKinematic = false;
+    }
 
-		for (float t = 0; t < duration; t += Time.deltaTime)
-		{
-			yield return null;
-			if (!slide)
-			{
-				pushForce = pushForce - Time.deltaTime * delta;
-				pushForce = pushForce < 0 ? 0 : pushForce;
-			}
-			rb.AddForce(new Vector3(0, -gravity * GetComponent<Rigidbody>().mass, 0));
-		}
+    private IEnumerator Disminuir(float value, float duration)
+    {
+        if (estaAturdido) estuvoAturdido = true;
+        estaAturdido = true;
+        canMove = false;
 
-		if (estuvoAturdido)
-		{
-			estuvoAturdido = false;
-		}
-		else
-		{
-			estaAturdido = false;
-			canMove = true;
-		}
-	}
-	public void ActivarSpeedBoost(float multiplicador, float tiempo)
-	{
-		StartCoroutine(RutinaVelocidad(multiplicador, tiempo));
-	}
+        float delta = value / duration;
 
-	private IEnumerator RutinaVelocidad(float multiplicador, float tiempo)
-	{
-		// Aumentamos la velocidad
-		currentSpeed *= multiplicador;
+        for (float t = 0; t < duration; t += Time.deltaTime)
+        {
+            yield return null;
+            if (!slide)
+            {
+                pushForce -= Time.deltaTime * delta;
+                pushForce = Mathf.Max(pushForce, 0); // Más limpio que el ternario
+            }
+            rb.AddForce(new Vector3(0, -gravity * masaRigidbody, 0));
+        }
 
-		// Esperamos los segundos
-		yield return new WaitForSeconds(tiempo);
+        if (estuvoAturdido)
+        {
+            estuvoAturdido = false;
+        }
+        else
+        {
+            estaAturdido = false;
+            canMove = true;
+        }
+    }
 
-		// Devolvemos la velocidad a la normalidad
-		currentSpeed /= multiplicador;
-	}
-	public void ActivarSuperSalto(float multiplicador, float tiempo)
-	{
-		StartCoroutine(RutinaSalto(multiplicador, tiempo));
-	}
+    public void ActivarSpeedBoost(float multiplicador, float tiempo)
+    {
+        StartCoroutine(RutinaVelocidad(multiplicador, tiempo));
+    }
 
-	private IEnumerator RutinaSalto(float multiplicador, float tiempo)
-	{
-		jumpHeight *= multiplicador;
+    private IEnumerator RutinaVelocidad(float multiplicador, float tiempo)
+    {
+        float baseWalk = walkSpeed;
+        float baseRun = runSpeed;
+        
+        walkSpeed *= multiplicador;
+        runSpeed *= multiplicador;
 
-		yield return new WaitForSeconds(tiempo);
+        yield return new WaitForSeconds(tiempo);
 
-		jumpHeight /= multiplicador;
-	}
-		public void ActivarPoderEmpuje(float tiempo)
+        walkSpeed = baseWalk;
+        runSpeed = baseRun;
+    }
+
+    public void ActivarSuperSalto(float multiplicador, float tiempo)
+    {
+        StartCoroutine(RutinaSalto(multiplicador, tiempo));
+    }
+
+    private IEnumerator RutinaSalto(float multiplicador, float tiempo)
+    {
+        float baseJump = jumpHeight;
+        jumpHeight *= multiplicador;
+        yield return new WaitForSeconds(tiempo);
+        jumpHeight = baseJump;
+    }
+
+    public void ActivarPoderEmpuje(float tiempo)
     {
         StartCoroutine(RutinaPoderEmpuje(tiempo));
     }
@@ -348,27 +351,26 @@ public class controlar : MonoBehaviour {
     private IEnumerator RutinaPoderEmpuje(float tiempo)
     {
         tienePoderDeEmpuje = true;
-        
         yield return new WaitForSeconds(tiempo);
-        
         tienePoderDeEmpuje = false;
     }
-	private void OnCollisionEnter(Collision collision)
+
+    private void OnCollisionEnter(Collision collision)
     {
-		if (tienePoderDeEmpuje)
+        if (tienePoderDeEmpuje)
         {
-        Rigidbody otroRb = collision.collider.GetComponent<Rigidbody>();
+            Rigidbody otroRb = collision.collider.GetComponent<Rigidbody>();
 
-        if (otroRb != null && !otroRb.isKinematic && collision.gameObject.CompareTag("Player"))
-        {
-            Vector3 direccionEmpuje = collision.transform.position - transform.position;
-            
-            direccionEmpuje.y = 0; 
-            
-            direccionEmpuje = direccionEmpuje.normalized;
+            // Optimización: CompareTag en lugar de == "Player"
+            if (otroRb != null && !otroRb.isKinematic && collision.gameObject.CompareTag("Player"))
+            {
+                Vector3 direccionEmpuje = collision.transform.position - transform.position;
+                direccionEmpuje.y = 0;
+                direccionEmpuje = direccionEmpuje.normalized;
 
-            otroRb.AddForce(direccionEmpuje * fuerzaDeEmpuje, ForceMode.Impulse);
+                otroRb.AddForce(direccionEmpuje * fuerzaDeEmpuje, ForceMode.Impulse);
+            }
         }
     }
-	}
+    #endregion
 }
