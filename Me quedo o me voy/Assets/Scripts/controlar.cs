@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using Unity.Netcode;
 
 [RequireComponent (typeof (Rigidbody))]
 [RequireComponent (typeof (CapsuleCollider))]
 
-public class controlar : MonoBehaviour {
+public class controlar : NetworkBehaviour {
 	
 	//public float speed = 10.0f;
 	public float currentSpeed;
