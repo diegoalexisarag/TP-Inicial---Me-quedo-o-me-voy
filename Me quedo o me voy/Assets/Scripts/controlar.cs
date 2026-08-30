@@ -87,6 +87,7 @@ public class controlar : NetworkBehaviour {
 	//bool EstaEnElSuelo (){
 	//	return Physics.Raycast(transform.position, -Vector3.up, distanciaAlSuelo + 0.1f);
 	//}
+
 	
 	void Awake () 
         {
@@ -157,6 +158,16 @@ public class controlar : NetworkBehaviour {
 	    {
     	    audioSource.Stop();
 	    }
+
+        // 4. Pausa del Juego
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            UIPauseManager pauseManager = FindAnyObjectByType<UIPauseManager>();
+            if (pauseManager != null)
+            {
+                pauseManager.Pause();
+            }
+        }
     }
 
     public void UpdateAnimations()
@@ -229,7 +240,7 @@ public class controlar : NetworkBehaviour {
     }
 	private void ManejarInputsAcciones()
     {
-        if (EstaEnElSuelo())
+        if (EstaEnElSuelo() && FindAnyObjectByType<UIPauseManager>()?.IsPaused != true)
         {
             if (Input.GetButtonDown("Jump"))
             {
@@ -270,6 +281,11 @@ public class controlar : NetworkBehaviour {
     private void CameraRotation()
     {
         if (CinemachineCameraTarget == null) return;
+
+        if(FindAnyObjectByType<UIPauseManager>()?.IsPaused == true)
+        {
+            return; // No rotar la cámara si la pantalla de pausa está activa
+        }
 
         Vector2 look = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * MouseSensitivity;
 
