@@ -1,8 +1,8 @@
 ﻿<Solution>
   <Project Path="Blocks.Sessions.Common.csproj" />
   <Project Path="Tests.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="GameScripts.csproj" />
   <Project Path="Blocks.Sessions.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Blocks.Common.csproj" />
 </Solution>
