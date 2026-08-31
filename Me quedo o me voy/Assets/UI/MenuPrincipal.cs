@@ -1,9 +1,10 @@
-using Unity.Netcode;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
+    public TMP_InputField codigoInput;
+
     public void Salir()
     {
         Application.Quit();
@@ -11,22 +12,19 @@ public class MainMenu : MonoBehaviour
 
     public void CrearPartida()
     {
-        Debug.Log("HOST");
+        Debug.Log("CREAR PARTIDA");
 
-        if (NetworkManager.Singleton.StartHost())
-        {
-            NetworkManager.Singleton.SceneManager.LoadScene(
-                "EscenarioInicial",
-                UnityEngine.SceneManagement.LoadSceneMode.Single
-            );
-        }
+        MultiplayerManager.Instance.CrearPartida();
     }
 
     public void UnirsePartida()
     {
-        Debug.Log("UNIRSE");
+        Debug.Log("BOTON UNIRSE FUNCIONA");
 
-        NetworkManager.Singleton.StartClient();
+        string codigo = codigoInput.text;
+
+        Debug.Log("CODIGO ESCRITO: [" + codigo + "]");
+
+        MultiplayerManager.Instance.UnirsePartida(codigo);
     }
 }
-
