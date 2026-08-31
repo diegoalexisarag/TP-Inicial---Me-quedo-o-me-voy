@@ -107,7 +107,7 @@ public class controlar : NetworkBehaviour {
 	
     void FixedUpdate()
     {
-        Debug.Log("FixedUpdate - Owner: " + IsOwner + " | ClientID: " + OwnerClientId);
+        if (!IsOwner) return;
         if (canMove)
         {
             MoverJugadorFisicas();
@@ -171,16 +171,7 @@ public class controlar : NetworkBehaviour {
             }
         }
     }
-    public override void OnNetworkSpawn()
-    {
-        base.OnNetworkSpawn();
 
-        if (!IsOwner)
-        {
-            if (CinemachineCameraTarget != null)
-                CinemachineCameraTarget.gameObject.SetActive(false);
-        }
-    }
     public void UpdateAnimations()
     {
         // Optimización: Usamos Hashes enteros en lugar de buscar strings
@@ -194,6 +185,7 @@ public class controlar : NetworkBehaviour {
 
 	private void LateUpdate()
 	{
+        if (!IsOwner) return;
 		CameraRotation();
 	}
     private void ManejarDeteccionDeSuelo()
