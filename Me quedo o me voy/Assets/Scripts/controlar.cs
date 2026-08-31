@@ -107,6 +107,7 @@ public class controlar : NetworkBehaviour {
 	
     void FixedUpdate()
     {
+        Debug.Log("FixedUpdate - Owner: " + IsOwner + " | ClientID: " + OwnerClientId);
         if (canMove)
         {
             MoverJugadorFisicas();
@@ -123,6 +124,7 @@ public class controlar : NetworkBehaviour {
 
     void Update()
     {
+        if (!IsOwner) return;
         // 1. Recolección de Inputs
         isRunning = Input.GetKey(KeyCode.LeftShift);
         currentSpeed = (isRunning && isMoving) ? runSpeed : walkSpeed;
@@ -169,7 +171,16 @@ public class controlar : NetworkBehaviour {
             }
         }
     }
+    public override void OnNetworkSpawn()
+    {
+        base.OnNetworkSpawn();
 
+        if (!IsOwner)
+        {
+            if (CinemachineCameraTarget != null)
+                CinemachineCameraTarget.gameObject.SetActive(false);
+        }
+    }
     public void UpdateAnimations()
     {
         // Optimización: Usamos Hashes enteros en lugar de buscar strings

@@ -8,15 +8,25 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
     public void CrearPartida()
     {
         Debug.Log("HOST");
-        NetworkManager.Singleton.StartHost();
-        SceneManager.LoadScene("EscenarioInicial");
+
+        if (NetworkManager.Singleton.StartHost())
+        {
+            NetworkManager.Singleton.SceneManager.LoadScene(
+                "EscenarioInicial",
+                UnityEngine.SceneManagement.LoadSceneMode.Single
+            );
+        }
     }
+
     public void UnirsePartida()
     {
         Debug.Log("UNIRSE");
+
         NetworkManager.Singleton.StartClient();
     }
 }
+
