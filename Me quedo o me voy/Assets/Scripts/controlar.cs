@@ -101,8 +101,9 @@ public class controlar : NetworkBehaviour {
         distanciaAlSuelo = GetComponent<Collider>().bounds.extents.y;
         checkPoint = transform.position;
         
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+    // Borrar estas líneas:
+    // Cursor.visible = false;
+    // C    ursor.lockState = CursorLockMode.Locked;
     }
 	
     void FixedUpdate()
@@ -125,6 +126,33 @@ public class controlar : NetworkBehaviour {
     void Update()
     {
         if (!IsOwner) return;
+
+        // --- GESTIÓN DEL LOBBY Y CUENTA REGRESIVA ---
+        if (MatchManager.Instancia != null)
+        {
+            // Si estamos en el lobby, liberamos el mouse para poder hacer clic
+            if (MatchManager.Instancia.enLobby.Value || FindAnyObjectByType<UIPauseManager>()?.IsPaused == true)
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else // Si ya salimos del lobby, lo volvemos a bloquear para jugar
+            {
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+
+            // Bloqueamos el movimiento físico hasta que arranque el reloj
+            if (!MatchManager.Instancia.carreraIniciada.Value)
+            {
+                moveDir = Vector3.zero;
+                isMoving = false;
+                isRunning = false;
+                UpdateAnimations();
+                return; 
+            }
+        }
+
         // 1. Recolección de Inputs
         isRunning = Input.GetKey(KeyCode.LeftShift);
         currentSpeed = (isRunning && isMoving) ? runSpeed : walkSpeed;
@@ -285,12 +313,17 @@ public class controlar : NetworkBehaviour {
     {
         if (CinemachineCameraTarget == null) return;
 
-        if(FindAnyObjectByType<UIPauseManager>()?.IsPaused == true)
+        bool enPausa = FindAnyObjectByType<UIPauseManager>()?.IsPaused == true;
+        bool enLobby = MatchManager.Instancia != null && MatchManager.Instancia.enLobby.Value;
+
+        // Si el juego está pausado o estamos en el menú de espera, no rotamos la cámara
+        if (enPausa || enLobby) 
         {
-            return; // No rotar la cámara si la pantalla de pausa está activa
+            return; 
         }
 
         Vector2 look = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * MouseSensitivity;
+        // ... (el resto del código de rotación se mantiene igual)
 
         if (look.sqrMagnitude >= _threshold)
         {
