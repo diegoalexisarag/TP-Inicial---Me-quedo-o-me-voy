@@ -95,7 +95,7 @@ public class MatchManager : NetworkBehaviour
         if (panelLobby != null)
         {
             panelLobby.SetActive(enLobby.Value);
-            textoContadorJugadores.text = $"Jugadores: {jugadoresConectados.Value}/8";
+            textoContadorJugadores.text = $"Jugadores: {jugadoresConectados.Value}/4";
         }
 
         // Si seguimos en el lobby, no procesamos la UI de la carrera
