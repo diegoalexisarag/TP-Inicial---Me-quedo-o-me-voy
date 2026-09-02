@@ -15,6 +15,15 @@ public class MatchManager : NetworkBehaviour
     [SerializeField] private GameObject panelLobby;
     [SerializeField] private TextMeshProUGUI textoContadorJugadores;
     [SerializeField] private Button botonEmpezar; // Solo el Host debe poder usarlo
+    
+    [Header("UI de Victoria")]
+    [SerializeField] bool pantallaVictoriaMostrada = false;
+    [SerializeField] private GameObject panelGameOver; 
+    [SerializeField] private TextMeshProUGUI textoGanador; 
+    [SerializeField] private TextMeshProUGUI textoTiempoFinal; 
+
+    public NetworkVariable<bool> carreraFinalizada = new NetworkVariable<bool>(false);
+    public NetworkVariable<ulong> idGanador = new NetworkVariable<ulong>(0);
 
     // Variables de estado sincronizadas
     public NetworkVariable<int> jugadoresConectados = new NetworkVariable<int>(0);
@@ -33,10 +42,9 @@ public class MatchManager : NetworkBehaviour
     {
         if (IsServer)
         {
-            // El servidor escucha quién entra y quién sale
             NetworkManager.Singleton.OnClientConnectedCallback += ActualizarContador;
             NetworkManager.Singleton.OnClientDisconnectCallback += ActualizarContador;
-            jugadoresConectados.Value = 1; // Contamos al Host inmediatamente
+            jugadoresConectados.Value = 1;
         }
 
         // Seguridad: Solo activamos el botón de empezar en la pantalla del Host
@@ -66,7 +74,6 @@ public class MatchManager : NetworkBehaviour
 
     private void IniciarPartidaDesdeLobby()
     {
-        // El Host presiona el botón y arranca la secuencia
         if (IsServer)
         {
             enLobby.Value = false;
@@ -80,7 +87,7 @@ public class MatchManager : NetworkBehaviour
         if (!IsSpawned) return;
         double tiempoActual = NetworkManager.Singleton.ServerTime.Time;
 
-        // Disparador del inicio de carrera
+
         if (IsServer && !enLobby.Value && !carreraIniciada.Value && tiempoActual >= tiempoInicioCarrera.Value)
         {
             carreraIniciada.Value = true;
@@ -91,6 +98,17 @@ public class MatchManager : NetworkBehaviour
 
     private void ActualizarUI(double tiempoActual)
     {
+
+        if (carreraFinalizada.Value)
+        {
+            MostrarPantallaVictoria();
+            return;
+        }
+        else
+        {
+            if (panelGameOver != null) panelGameOver.SetActive(false);
+        }
+
         // 1. Lógica del Panel de Espera
         if (panelLobby != null)
         {
@@ -114,7 +132,7 @@ public class MatchManager : NetworkBehaviour
         {
             textoCentroPantalla.text = "¡YA!";
         }
-        else
+        else if (!pantallaVictoriaMostrada)
         {
             textoCentroPantalla.gameObject.SetActive(false);
             textoCronometro.gameObject.SetActive(true);
@@ -123,12 +141,42 @@ public class MatchManager : NetworkBehaviour
         // 3. Lógica del Cronómetro Superior
         if (carreraIniciada.Value)
         {
-            double tiempoRestante = tiempoFinCarrera.Value - tiempoActual;
+            textoCronometro.text = calcularTiempoRestante(tiempoActual);
+        }
+    }
+    
+    public void DeclararGanador(ulong clientId)
+    {
+        if (IsServer)
+        {
+            idGanador.Value = clientId;
+            carreraFinalizada.Value = true;
+            enLobby.Value = false; 
+        }
+    }
+
+    private void MostrarPantallaVictoria()
+    {
+        double tiempoActual = NetworkManager.Singleton.ServerTime.Time;
+        panelGameOver.SetActive(true);
+        textoCronometro.gameObject.SetActive(false);
+        textoGanador.text = $"Ganador: Jugador {idGanador.Value}";
+        textoCronometro.gameObject.SetActive(false);
+
+        if (!pantallaVictoriaMostrada)
+        {
+            textoTiempoFinal.text = $"Tiempo restante: {calcularTiempoRestante(tiempoActual)}";
+        }
+
+        pantallaVictoriaMostrada = true;
+    }
+
+    private string calcularTiempoRestante(double tiempoActual){
+        double tiempoRestante = tiempoFinCarrera.Value - tiempoActual;
             if (tiempoRestante <= 0) tiempoRestante = 0;
 
             int minutos = Mathf.FloorToInt((float)tiempoRestante / 60);
             int segundos = Mathf.FloorToInt((float)tiempoRestante % 60);
-            textoCronometro.text = string.Format("{0:00}:{1:00}", minutos, segundos);
-        }
+            return string.Format("{0:00}:{1:00}", minutos, segundos);
     }
 }
