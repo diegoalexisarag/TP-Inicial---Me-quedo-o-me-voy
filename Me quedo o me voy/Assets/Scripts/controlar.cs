@@ -133,9 +133,10 @@ public class controlar : NetworkBehaviour {
             bool estamosEnLobby = MatchManager.Instancia.enLobby.Value;
             bool carreraTerminada = MatchManager.Instancia.carreraFinalizada.Value;
             bool carreraActiva = MatchManager.Instancia.carreraIniciada.Value;
+            bool enPausa = FindAnyObjectByType<UIPauseManager>()?.IsPaused == true;
 
             // 1. Liberar el cursor si estamos esperando o si ya hay un ganador
-            if (estamosEnLobby || carreraTerminada)
+            if (estamosEnLobby || carreraTerminada || enPausa)
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
@@ -147,7 +148,7 @@ public class controlar : NetworkBehaviour {
             }
 
             // 2. Anular los controles físicos si la carrera no está en curso
-            if (!carreraActiva || carreraTerminada)
+            if (!carreraActiva || carreraTerminada || enPausa)
             {
                 moveDir = Vector3.zero;
                 isMoving = false;
