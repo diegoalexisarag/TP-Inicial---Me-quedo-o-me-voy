@@ -154,6 +154,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bd8d804feddd0c44a4b206440ae22d7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2859992986033162879}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bd8d804feddd0c44a4b206440ae22d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7449059256836734296}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bd8d804feddd0c44a4b206440ae22d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7851851568710021724}
   m_SourcePrefab: {fileID: 100100000, guid: 9bd8d804feddd0c44a4b206440ae22d7, type: 3}
 --- !u!1 &3856217376570336071 stripped
 GameObject:
@@ -226,7 +232,7 @@ MonoBehaviour:
   InScenePlacedSourceGlobalObjectIdHash: 0
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
-  Ownership: 1
+  Ownership: 8
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   m_InScenePlaced: 0
@@ -415,8 +421,132 @@ MonoBehaviour:
   m_EditorClassIdentifier: GameScripts::PlayerRespawn
   limiteCaida: -0.1
   puntoDeReaparicion: {fileID: 0}
+--- !u!114 &-7449059256836734296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856217376570336071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.NetworkTransform
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkTransformExpanded: 0
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
+  AuthorityMode: 1
+  TickSyncChildren: 0
+  UseUnreliableDeltas: 0
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  SwitchTransformSpaceWhenParented: 0
+  Interpolate: 1
+  SlerpPosition: 0
+--- !u!114 &7851851568710021724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856217376570336071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.NetworkAnimator
+  ShowTopMostFoldoutHeaderGroup: 1
+  NetworkAnimatorExpanded: 0
+  AuthorityMode: 1
+  m_Animator: {fileID: 7507488749495018375}
+  TransitionStateInfoList:
+  - IsCrossFadeExit: 0
+    Layer: 1
+    OriginatingState: 786910816
+    DestinationState: -1459219776
+    TransitionDuration: 0.25
+    TriggerNameHash: 125937960
+    TransitionIndex: 2
+  - IsCrossFadeExit: 0
+    Layer: 1
+    OriginatingState: 479715666
+    DestinationState: -1459219776
+    TransitionDuration: 0.25
+    TriggerNameHash: 125937960
+    TransitionIndex: 2
+  - IsCrossFadeExit: 0
+    Layer: 1
+    OriginatingState: 1748462031
+    DestinationState: -1459219776
+    TransitionDuration: 0.25
+    TriggerNameHash: 125937960
+    TransitionIndex: 2
+  AnimatorParameterEntries:
+    ParameterEntries:
+    - name: IsMoving
+      NameHash: 120489994
+      Synchronize: 1
+      ParameterType: 4
+    - name: IsRunning
+      NameHash: -887662580
+      Synchronize: 1
+      ParameterType: 4
+    - name: Grounded
+      NameHash: 862969536
+      Synchronize: 1
+      ParameterType: 4
+    - name: Jump
+      NameHash: 125937960
+      Synchronize: 1
+      ParameterType: 9
+    - name: VerticalVelocity
+      NameHash: -1380605809
+      Synchronize: 1
+      ParameterType: 1
+    - name: Dance
+      NameHash: -645213589
+      Synchronize: 1
+      ParameterType: 9
+    - name: Dance01
+      NameHash: 563477544
+      Synchronize: 1
+      ParameterType: 9
+    - name: Dance02
+      NameHash: -1197691502
+      Synchronize: 1
+      ParameterType: 9
+  AnimatorParametersExpanded: 0
 --- !u!4 &4526075746381838845 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bd8d804feddd0c44a4b206440ae22d7, type: 3}
+  m_PrefabInstance: {fileID: 4126810823385734678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7507488749495018375 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 9bd8d804feddd0c44a4b206440ae22d7, type: 3}
   m_PrefabInstance: {fileID: 4126810823385734678}
   m_PrefabAsset: {fileID: 0}
