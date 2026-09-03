@@ -22,6 +22,10 @@ public class MatchManager : NetworkBehaviour
     [SerializeField] private TextMeshProUGUI textoGanador; 
     [SerializeField] private TextMeshProUGUI textoTiempoFinal; 
 
+    [Header("UI de Tiempo acabado")]
+    [SerializeField] bool pantallaTiempoAcabadoMostrada = false;
+    [SerializeField] private GameObject panelTiempoAcabado; 
+
     public NetworkVariable<bool> carreraFinalizada = new NetworkVariable<bool>(false);
     public NetworkVariable<ulong> idGanador = new NetworkVariable<ulong>(0);
 
@@ -93,6 +97,15 @@ public class MatchManager : NetworkBehaviour
             carreraIniciada.Value = true;
         }
 
+        double tiempoRestante = tiempoFinCarrera.Value - tiempoActual;
+
+        if (IsServer && carreraIniciada.Value && !carreraFinalizada.Value && tiempoRestante <= 0)
+        {
+            carreraFinalizada.Value = true;
+            enLobby.Value = false; 
+        }
+
+
         ActualizarUI(tiempoActual);
     }
 
@@ -100,8 +113,15 @@ public class MatchManager : NetworkBehaviour
     {
 
         if (carreraFinalizada.Value)
-        {
-            MostrarPantallaVictoria();
+        {   
+            if (tiempoFinCarrera.Value - tiempoActual <= 0)
+            {
+                MostrarPantallaTiempoAcabado();
+            }
+            else
+            {
+                MostrarPantallaVictoria();
+            }
             return;
         }
         else
@@ -132,7 +152,7 @@ public class MatchManager : NetworkBehaviour
         {
             textoCentroPantalla.text = "¡YA!";
         }
-        else if (!pantallaVictoriaMostrada)
+        else if (!pantallaVictoriaMostrada || !pantallaTiempoAcabadoMostrada)
         {
             textoCentroPantalla.gameObject.SetActive(false);
             textoCronometro.gameObject.SetActive(true);
@@ -171,12 +191,19 @@ public class MatchManager : NetworkBehaviour
         pantallaVictoriaMostrada = true;
     }
 
+    private void MostrarPantallaTiempoAcabado()
+    {
+        panelTiempoAcabado.SetActive(true);
+        textoCronometro.gameObject.SetActive(false);
+        pantallaTiempoAcabadoMostrada = true;
+    }
+
     private string calcularTiempoRestante(double tiempoActual){
         double tiempoRestante = tiempoFinCarrera.Value - tiempoActual;
-            if (tiempoRestante <= 0) tiempoRestante = 0;
+        if (tiempoRestante <= 0) tiempoRestante = 0;
 
-            int minutos = Mathf.FloorToInt((float)tiempoRestante / 60);
-            int segundos = Mathf.FloorToInt((float)tiempoRestante % 60);
-            return string.Format("{0:00}:{1:00}", minutos, segundos);
+        int minutos = Mathf.FloorToInt((float)tiempoRestante / 60);
+        int segundos = Mathf.FloorToInt((float)tiempoRestante % 60);
+        return string.Format("{0:00}:{1:00}", minutos, segundos);
     }
 }
