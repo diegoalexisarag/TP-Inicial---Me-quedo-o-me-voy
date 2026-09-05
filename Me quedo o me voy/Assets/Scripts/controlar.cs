@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Unity.Netcode;
+using Unity.Netcode.Components;
 
 [RequireComponent (typeof (Rigidbody))]
 [RequireComponent (typeof (CapsuleCollider))]
@@ -20,11 +21,11 @@ public class controlar : NetworkBehaviour {
     private float masaRigidbody; // Caché de la masa
 	private Vector3 moveDir;
 	private Rigidbody rb;
-	private Animator animator;
-	public AudioSource audioSource;
-	public AudioClip sonidoBaile1;
-    public AudioClip sonidoBaile2;
-    public AudioClip sonidoBaile3;
+	//private Animator animator;
+	//public AudioSource audioSource;
+	//public AudioClip sonidoBaile1;
+    //public AudioClip sonidoBaile2;
+    //public AudioClip sonidoBaile3;
 
 	private bool isRunning;
 	private bool isMoving;
@@ -44,15 +45,19 @@ public class controlar : NetworkBehaviour {
 	private bool slide = false;
 
         // Hashes de Animación (Optimización masiva)
-    private readonly int isMovingHash = Animator.StringToHash("IsMoving");
-    private readonly int isRunningHash = Animator.StringToHash("IsRunning");
-    private readonly int groundedHash = Animator.StringToHash("Grounded");
-    private readonly int verticalVelocityHash = Animator.StringToHash("VerticalVelocity");
-    private readonly int jumpHash = Animator.StringToHash("Jump");
-    private readonly int danceHash = Animator.StringToHash("Dance");
-    private readonly int dance01Hash = Animator.StringToHash("Dance01");
-    private readonly int dance02Hash = Animator.StringToHash("Dance02");
+    //private readonly int isMovingHash = Animator.StringToHash("IsMoving");
+    //private readonly int isRunningHash = Animator.StringToHash("IsRunning");
+    //private readonly int groundedHash = Animator.StringToHash("Grounded");
+    //private readonly int verticalVelocityHash = Animator.StringToHash("VerticalVelocity");
+    //private readonly int jumpHash = Animator.StringToHash("Jump");
+    //private readonly int danceHash = Animator.StringToHash("Dance");
+    //private readonly int dance01Hash = Animator.StringToHash("Dance01");
+    //private readonly int dance02Hash = Animator.StringToHash("Dance02");
+    //private readonly int golpeoHash = Animator.StringToHash("golpeo");
 
+    //private bool estaBailando = false;
+    //private Coroutine baileCoroutine;
+    private Bate bate;
 	//[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
 	public GameObject CinemachineCameraTarget;
 
@@ -92,7 +97,8 @@ public class controlar : NetworkBehaviour {
 	void Awake () 
         {
         rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
+        bate = GetComponent<Bate>();
         
         rb.freezeRotation = true;
         rb.useGravity = false;
@@ -101,7 +107,6 @@ public class controlar : NetworkBehaviour {
         distanciaAlSuelo = GetComponent<Collider>().bounds.extents.y;
         checkPoint = transform.position;
         
-    // Borrar estas líneas:
     // Cursor.visible = false;
     // C    ursor.lockState = CursorLockMode.Locked;
     }
@@ -193,10 +198,10 @@ public class controlar : NetworkBehaviour {
         UpdateAnimations();
         bool seEstaMoviendo = moveDir.magnitude > 0.1f;
         bool presionoSalto = Input.GetButton("Jump");
-        if ((seEstaMoviendo || presionoSalto) && audioSource.isPlaying)
-	    {
-    	    audioSource.Stop();
-	    }
+        //if ((seEstaMoviendo || presionoSalto) && audioSource.isPlaying)
+	    //{
+    	//    audioSource.Stop();
+	    //}
 
         // 4. Pausa del Juego
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -212,10 +217,10 @@ public class controlar : NetworkBehaviour {
     public void UpdateAnimations()
     {
         // Optimización: Usamos Hashes enteros en lugar de buscar strings
-        animator.SetBool(isMovingHash, isMoving);
-        animator.SetBool(isRunningHash, isRunning && isMoving);
-        animator.SetBool(groundedHash, EstaEnElSuelo());
-        animator.SetFloat(verticalVelocityHash, VerticalVelocity);
+        //animator.SetBool(isMovingHash, isMoving);
+        //animator.SetBool(isRunningHash, isRunning && isMoving);
+        //animator.SetBool(groundedHash, EstaEnElSuelo());
+        //animator.SetFloat(verticalVelocityHash, VerticalVelocity);
     }
 
 
@@ -280,39 +285,56 @@ public class controlar : NetworkBehaviour {
     }
 	private void ManejarInputsAcciones()
     {
+        bool enElSuelo = EstaEnElSuelo();
         if (EstaEnElSuelo() && FindAnyObjectByType<UIPauseManager>()?.IsPaused != true)
         {
             if (Input.GetButtonDown("Jump"))
             {
                 rb.linearVelocity = new Vector3(rb.linearVelocity.x, CalcularVelocidadVerticalSalto(), rb.linearVelocity.z);
-                animator.SetTrigger(jumpHash);
+                //animator.SetTrigger(jumpHash);
             }
             
-            if (!isMoving)
-            {
-                if (Input.GetKeyDown(KeyCode.P)) {
-                    animator.SetTrigger(danceHash);
-                    audioSource.Stop();
-                    audioSource.clip = sonidoBaile1;
-                    audioSource.Play();
-                }
-                if (Input.GetKeyDown(KeyCode.I)) {
-                    animator.SetTrigger(dance01Hash);
-                    animator.SetTrigger(danceHash);
-                    audioSource.Stop();
-                    audioSource.clip = sonidoBaile2;
-                    audioSource.Play();
-                }
-                if (Input.GetKeyDown(KeyCode.O)) { 
-                    animator.SetTrigger(dance02Hash);
-                    animator.SetTrigger(danceHash);
-                    audioSource.Stop();
-                    audioSource.clip = sonidoBaile3;
-                    audioSource.Play();
-                }
-            }
+            //if (!isMoving)
+            //{
+             //   if (Input.GetKeyDown(KeyCode.P)) {
+                    //animator.SetTrigger(danceHash);
+                    //IniciarBaile(sonidoBaile1);
+               // }
+               // if (Input.GetKeyDown(KeyCode.I)) {
+                    //animator.SetTrigger(dance01Hash);
+                    //animator.SetTrigger(danceHash);
+                    //IniciarBaile(sonidoBaile2);
+                //}
+               // if (Input.GetKeyDown(KeyCode.O)) { 
+                    //animator.SetTrigger(dance02Hash);
+                    //animator.SetTrigger(danceHash);
+                    //IniciarBaile(sonidoBaile3);
+              //  }
+           // }
         }
+        //if (Input.GetMouseButtonDown(0) && enElSuelo && !estaBailando)
+        //{
+            //animator.SetTrigger(golpeoHash);
+         //   bate?.Golpear();
+        //}
     }
+    //private void IniciarBaile(AudioClip clip)
+    //{
+        //estaBailando = true;
+
+      //  audioSource.Stop();
+       // audioSource.clip = clip;
+      //  audioSource.Play();
+
+      //  if (baileCoroutine != null) StopCoroutine(baileCoroutine);
+       // baileCoroutine = StartCoroutine(TerminarBaileDespuesDe(clip != null ? clip.length : 1f));
+    //}
+
+    //private IEnumerator TerminarBaileDespuesDe(float segundos)
+    //{
+     //   yield return new WaitForSeconds(segundos);
+        //estaBailando = false;
+    //}
     private bool EstaEnElSuelo()
     {
         return Physics.Raycast(transform.position, -Vector3.up, distanciaAlSuelo + 0.1f);

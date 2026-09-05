@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\UI\PausaScript.cs" />
     <Compile Include="Assets\UI\MenuPrincipal.cs" />
+    <Compile Include="Assets\QuarterView 3D Action BE5\ReadMe\Scripts\ReadmeBE5.cs" />
     <Compile Include="Assets\POLY STYLE - Platformer Starter Pack\Platformer Starter Pack_URP\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Obstaculos Script\MoviminetoPorPuntos.cs" />
     <Compile Include="Assets\Obstaculos Script\VolverAPosicion.cs" />
@@ -99,6 +100,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Blocks\MultiplayerSession\Scenes\JoinByBrowsing\JoinByBrowsing.uxml" />
     <None Include="Assets\Blocks\Common\Content\stylesheets\list-view.uss" />
+    <None Include="Assets\Baseball Bats\Documentation\Documentation.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD SpaceWarp.shader" />
     <None Include="Assets\Escenario\agua.txt" />
     <None Include="Assets\Blocks\Common\Content\composites\card-component.uss" />
@@ -1256,6 +1258,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.UI.Analytics">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.Analytics.dll</HintPath>
       <Private>False</Private>
@@ -1328,8 +1334,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Formats.Fbx.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.PathTracing.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.PathTracing.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
@@ -1436,6 +1450,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Autodesk.Fbx">
+      <HintPath>Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1508,6 +1526,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Formats.Fbx.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Formats.Fbx.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
@@ -1530,6 +1552,10 @@
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.Fbx.Editor">
+      <HintPath>Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">

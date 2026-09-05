@@ -48,7 +48,7 @@ public class CameraNetworkSetup : MonoBehaviour
             return;
         }
 
-        controlar controlador = player.GetComponent<controlar>();
+        controlar controlador = player.GetComponentInChildren<controlar>();
 
         if (controlador == null)
         {
