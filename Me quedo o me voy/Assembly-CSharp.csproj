@@ -57,6 +57,7 @@
     <Compile Include="Assets\UI\MenuPrincipal.cs" />
     <Compile Include="Assets\QuarterView 3D Action BE5\ReadMe\Scripts\ReadmeBE5.cs" />
     <Compile Include="Assets\POLY STYLE - Platformer Starter Pack\Platformer Starter Pack_URP\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Realistic Hail Set\Demo Scene\Scripts\DemoSceneController.cs" />
     <Compile Include="Assets\Obstaculos Script\MoviminetoPorPuntos.cs" />
     <Compile Include="Assets\Obstaculos Script\VolverAPosicion.cs" />
     <Compile Include="Assets\Obstaculos Script\pendulo.cs" />
@@ -111,6 +112,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Realistic Hail Set\README.txt" />
     <None Include="Assets\Blocks\Common\Content\stylesheets\modals.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Blocks\Common\Content\composites\numeric-list-element.uss" />
@@ -1546,16 +1548,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Autodesk.Fbx.Editor">
+      <HintPath>Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Collections.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Autodesk.Fbx.Editor">
-      <HintPath>Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">

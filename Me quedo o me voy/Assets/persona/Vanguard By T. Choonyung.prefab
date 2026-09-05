@@ -357,7 +357,7 @@ Transform:
   m_GameObject: {fileID: 1395915112910194603}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.6812509, z: -0, w: 0.7320501}
-  m_LocalPosition: {x: -15.64981, y: 8.2186, z: -38.14588}
+  m_LocalPosition: {x: -14.657644, y: 8.218603, z: -34.3333}
   m_LocalScale: {x: 0.6260852, y: 0.7043441, z: 0.6984515}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1281140182
+  GlobalObjectIdHash: 2239220284
   InScenePlacedSourceGlobalObjectIdHash: 3101602282
   m_InScenePlacedDisabledByDefault: 0
   DeferredDespawnTick: 0
@@ -487,10 +487,10 @@ MonoBehaviour:
   rotateSpeed: 15
   fuerzaDeEmpuje: 55
   tienePoderDeEmpuje: 0
-  audioSource: {fileID: 5932593824084327375}
-  sonidoBaile1: {fileID: 8300000, guid: 83d8a8848576c9d4587ac8321f09c007, type: 3}
-  sonidoBaile2: {fileID: 8300000, guid: 9a2d4226c3d5f0849a3fc4b2ad538d68, type: 3}
-  sonidoBaile3: {fileID: 8300000, guid: 8dc298329e389844aab20e7a9c78dff2, type: 3}
+  audioSource: {fileID: 0}
+  sonidoBaile1: {fileID: 0}
+  sonidoBaile2: {fileID: 0}
+  sonidoBaile3: {fileID: 0}
   walkSpeed: 3
   runSpeed: 6
   checkPoint: {x: 0, y: 0, z: 0}
@@ -1718,7 +1718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a380eb8f47580144cb80dd7e27e978f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GameScripts::AgarrarObjeto
-  myHands: {fileID: 837069550383928442}
+  ShowTopMostFoldoutHeaderGroup: 1
+  myHands: {fileID: 2147232600619749097}
 --- !u!1 &5042130731784747190
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,63 +1,135 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class AgarrarObjeto : MonoBehaviour
+// Requiere que este GameObject (el jugador) tenga NetworkObject.
+// Requiere que los objetos agarrables tengan: tag "objeto", Rigidbody,
+// Collider (no trigger), NetworkObject y NetworkTransform.
+public class AgarrarObjeto : NetworkBehaviour
 {
-    public GameObject myHands; //reference to your hands/the position where you want your object to go
-    bool canpickup; //a bool to see if you can or cant pick up the item
-    GameObject ObjectIwantToPickUp; // the gameobject onwhich you collided with
-    bool hasItem; // a bool to see if you have an item in your hand
-    // Start is called before the first frame update
-    void Start()
-    {
-        canpickup = false;    //setting both to false
-        hasItem = false;
-    }
+    [Tooltip("Posición local (hija del jugador) donde se coloca el objeto agarrado")]
+    public Transform myHands;
 
-    // Update is called once per frame
+    private bool canpickup;
+    private NetworkObject objetoCercano; // objeto detectado por el trigger, aún no agarrado
+    private bool hasItem;
+    private NetworkObject objetoActual;  // objeto que tengo agarrado ahora mismo
+
     void Update()
     {
-        if(canpickup == true) // if you enter thecollider of the objecct
+        // Solo el dueño de este jugador procesa su propio input
+        if (!IsOwner) return;
+
+        if (canpickup && !hasItem && objetoCercano != null && Input.GetKeyDown(KeyCode.E))
         {
-            if (Input.GetKeyDown(KeyCode.E))  // can be e or any key
-            {
-                hasItem = true;
-                //ObjectIwantToPickUp.GetComponent<Rigidbody>().isKinematic = true;   //makes the rigidbody not be acted upon by forces
-                Rigidbody rb = ObjectIwantToPickUp.GetComponent<Rigidbody>();
-                rb.isKinematic = true;
-                rb.linearVelocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-                Collider col = ObjectIwantToPickUp.GetComponent<Collider>();
-                if (col != null) col.enabled = false;
-                ObjectIwantToPickUp.transform.position = myHands.transform.position; // sets the position of the object to your hand position
-                ObjectIwantToPickUp.transform.parent = myHands.transform; //makes the object become a child of the parent so that it moves with the hands
-            }
+            SolicitarAgarrarServerRpc(objetoCercano);
         }
-        if (Input.GetKeyDown(KeyCode.Q) && hasItem == true) // if you have an item and get the key to remove the object, again can be any key
+
+        if (hasItem && Input.GetKeyDown(KeyCode.Q))
         {
-            //ObjectIwantToPickUp.GetComponent<Rigidbody>().isKinematic = false; // make the rigidbody work again
-            Rigidbody rb = ObjectIwantToPickUp.GetComponent<Rigidbody>();
-            rb.isKinematic = false;
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            Collider col = ObjectIwantToPickUp.GetComponent<Collider>();
-            if (col != null) col.enabled = true;
-            hasItem = false;
-            ObjectIwantToPickUp.transform.parent = null; // make the object no be a child of the hands
+            SolicitarSoltarServerRpc(objetoActual);
         }
     }
-    private void OnTriggerEnter(Collider other) // to see when the player enters the collider
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "objeto") //on the object you want to pick up set the tag to be anything, in this case "object"
+        if (!IsOwner) return;
+
+        if (other.gameObject.CompareTag("objeto"))
         {
-            canpickup = true;  //set the pick up bool to true
-            ObjectIwantToPickUp = other.gameObject; //set the gameobject you collided with to one you can reference
+            NetworkObject netObj = other.GetComponent<NetworkObject>();
+            if (netObj == null) return; // el objeto agarrable necesita NetworkObject
+
+            canpickup = true;
+            objetoCercano = netObj;
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
-        canpickup = false; //when you leave the collider set the canpickup bool to false
-     
+        if (!IsOwner) return;
+
+        // Solo limpiamos si el que se aleja es justo el que teníamos marcado como cercano
+        if (objetoCercano != null && other.gameObject == objetoCercano.gameObject)
+        {
+            canpickup = false;
+            objetoCercano = null;
+        }
+    }
+
+    // --- SERVIDOR: el servidor es quien decide y aplica el estado real del objeto ---
+
+    [ServerRpc]
+    private void SolicitarAgarrarServerRpc(NetworkObjectReference objRef, ServerRpcParams rpcParams = default)
+    {
+        if (!objRef.TryGet(out NetworkObject netObj)) return;
+        if (netObj.transform.parent != null) return; // ya lo tiene otro jugador, ignorar
+
+        Rigidbody rb = netObj.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = true;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
+        Collider col = netObj.GetComponent<Collider>();
+        if (col != null) col.enabled = false;
+
+        // Emparentamos el NetworkObject al jugador; Netcode sincroniza esto en todos los clientes
+        netObj.TrySetParent(NetworkObject, false);
+
+        AplicarAgarreClientRpc(netObj);
+    }
+
+    [ServerRpc]
+    private void SolicitarSoltarServerRpc(NetworkObjectReference objRef)
+    {
+        if (!objRef.TryGet(out NetworkObject netObj)) return;
+
+        Rigidbody rb = netObj.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = false;
+        }
+
+        Collider col = netObj.GetComponent<Collider>();
+        if (col != null) col.enabled = true;
+
+        netObj.TryRemoveParent(true);
+
+        AplicarSoltadoClientRpc(netObj);
+    }
+
+    // --- CLIENTES: solo actualizan su copia local del estado (hasItem, posición en la mano) ---
+
+    [ClientRpc]
+    private void AplicarAgarreClientRpc(NetworkObjectReference objRef)
+    {
+        if (!objRef.TryGet(out NetworkObject netObj)) return;
+
+        if (myHands != null)
+        {
+            netObj.transform.SetLocalPositionAndRotation(myHands.localPosition, myHands.localRotation);
+        }
+
+        if (IsOwner)
+        {
+            hasItem = true;
+            objetoActual = netObj;
+            canpickup = false;
+            objetoCercano = null;
+        }
+    }
+
+    [ClientRpc]
+    private void AplicarSoltadoClientRpc(NetworkObjectReference objRef)
+    {
+        if (IsOwner)
+        {
+            hasItem = false;
+            objetoActual = null;
+        }
     }
 }
