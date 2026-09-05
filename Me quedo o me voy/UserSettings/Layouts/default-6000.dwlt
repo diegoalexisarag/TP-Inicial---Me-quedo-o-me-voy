@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 112}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 106
+  controlID: 139
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 120
+  controlID: 140
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -864,8 +864,6 @@ MonoBehaviour:
     - m_rawData: 568105584918856230
     - m_rawData: 568105584918856232
     - m_rawData: 568105584918856234
-    - m_rawData: 568105584918856236
-    - m_rawData: 568105584918856238
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -908,20 +906,22 @@ MonoBehaviour:
     - m_rawData: 568105584918856198
     - m_rawData: 568105584918856200
     - m_rawData: 568105584918856202
+    - m_rawData: 568105584918856204
     - m_rawData: 568105584918856206
     - m_rawData: 568105584918856208
     - m_rawData: 568105584918856210
     - m_rawData: 568105584918856212
     - m_rawData: 568105584918856214
     - m_rawData: 568105584918856216
+    - m_rawData: 568105584918856218
+    - m_rawData: 568105584918856220
     - m_rawData: 568105584918856222
     - m_rawData: 568105584918856224
     - m_rawData: 568105584918856226
     - m_rawData: 568105584918856228
     - m_rawData: 568105584918856230
+    - m_rawData: 568105584918856232
     - m_rawData: 568105584918856234
-    - m_rawData: 568105584918856236
-    - m_rawData: 568105584918856238
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1536,9 +1536,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -13.822621, y: 9.128741, z: -32.918755}
+    m_Target: {x: -9.93189, y: 10.090498, z: -35.864388}
     speed: 2
-    m_Value: {x: -13.822621, y: 9.128741, z: -32.918755}
+    m_Value: {x: -9.93189, y: 10.090498, z: -35.864388}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1585,9 +1585,9 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: -0.14390357, y: 0.02306164, z: -0.004560867, w: -0.989672}
+    m_Target: {x: -0.012652214, y: -0.64057356, z: 0.008914562, w: -0.7682046}
     speed: 2
-    m_Value: {x: -0.14390357, y: 0.02306164, z: -0.0045608664, w: -0.989672}
+    m_Value: {x: 0.012652214, y: 0.64057356, z: -0.008914562, w: 0.7682046}
   m_Size:
     m_Target: 1.8918426
     speed: 2

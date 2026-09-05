@@ -8,13 +8,6 @@ public class cajaMisteriosaEmpuje : NetworkBehaviour
     [Tooltip("Cuánto dura el efecto, en segundos")]
     public float duracionBoost = 8f;
 
-    [Header("Efectos (opcional)")]
-    [Tooltip("Partícula o efecto que se instancia al recogerla (se ve en todos los clientes)")]
-    public GameObject efectoAlRecoger;
-
-    [Tooltip("Sonido al recogerla")]
-    public AudioClip sonidoAlRecoger;
-
     private bool yaActivada = false;
 
     private void Awake()
@@ -43,8 +36,6 @@ public class cajaMisteriosaEmpuje : NetworkBehaviour
         };
         AplicarEmpujeClientRpc(jugadorNetObj, duracionBoost, paramsSoloDueño);
 
-        MostrarEfectoClientRpc();
-
         NetworkObject miNetObj = GetComponent<NetworkObject>();
         if (miNetObj != null)
         {
@@ -64,15 +55,5 @@ public class cajaMisteriosaEmpuje : NetworkBehaviour
             controlar jugador = jugadorNetObj.GetComponent<controlar>();
             jugador?.ActivarPoderEmpuje(tiempo);
         }
-    }
-
-    [ClientRpc]
-    private void MostrarEfectoClientRpc()
-    {
-        if (efectoAlRecoger != null)
-            Instantiate(efectoAlRecoger, transform.position, Quaternion.identity);
-
-        if (sonidoAlRecoger != null)
-            AudioSource.PlayClipAtPoint(sonidoAlRecoger, transform.position);
     }
 }
